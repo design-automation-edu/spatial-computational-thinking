@@ -1,0 +1,450 @@
+{
+    "name": "SCT_W2_Tutorial",
+    "author": "new_user",
+    "flowchart": {
+        "id": "5ed199bf-aca6-c5d6-b9b5-d26ab33c249b",
+        "name": "W2_Tutorial",
+        "description": "In this tutorial, we are creating a Mobius procedure which prints out the following in the console:\n\n\"\n#\n##\n###\n####\n#####\"\n\nConcepts:\nIntroduction to loops (Foreach)\nString Addition\n'\\n'",
+        "language": "js",
+        "meta": {
+            "selected_nodes": [
+                0
+            ]
+        },
+        "nodes": [
+            {
+                "name": "Start",
+                "id": "node_6mb2zav9gjo",
+                "position": {
+                    "x": 5340,
+                    "y": 5000
+                },
+                "enabled": true,
+                "type": "start",
+                "procedure": [
+                    {
+                        "type": 13,
+                        "ID": "",
+                        "meta": {
+                            "name": "",
+                            "module": ""
+                        },
+                        "argCount": 0,
+                        "args": [],
+                        "print": false,
+                        "enabled": true,
+                        "selected": false,
+                        "selectGeom": false,
+                        "hasError": false
+                    },
+                    {
+                        "type": 10,
+                        "ID": "prod-c3dqhkxnc6r",
+                        "enabled": true,
+                        "print": false,
+                        "argCount": 2,
+                        "meta": {
+                            "module": "Input",
+                            "name": "Constant",
+                            "inputMode": 0,
+                            "description": "number of iterations"
+                        },
+                        "args": [
+                            {
+                                "name": "const_name",
+                                "value": "num_iterations",
+                                "invalidVar": false,
+                                "jsValue": "num_iterations_"
+                            },
+                            {
+                                "name": "__input__",
+                                "value": "10",
+                                "jsValue": "10",
+                                "usedVars": [],
+                                "invalidVar": false
+                            }
+                        ],
+                        "selected": false,
+                        "hasError": false
+                    }
+                ],
+                "state": {
+                    "procedure": []
+                },
+                "input": {
+                    "name": "input",
+                    "type": 0,
+                    "edges": [],
+                    "meta": {
+                        "mode": 0,
+                        "opts": {}
+                    },
+                    "parentNode": "~flowchart~nodes~0"
+                },
+                "output": {
+                    "name": "output",
+                    "type": 1,
+                    "edges": [
+                        {
+                            "source": "~flowchart~nodes~0~output",
+                            "target": {
+                                "name": "input",
+                                "type": 0,
+                                "edges": [
+                                    "~flowchart~nodes~0~output~edges~0"
+                                ],
+                                "meta": {
+                                    "mode": 0,
+                                    "opts": {}
+                                },
+                                "parentNode": {
+                                    "name": "Node",
+                                    "id": "node_8r0icnunjm3",
+                                    "position": {
+                                        "x": 5340,
+                                        "y": 5140
+                                    },
+                                    "enabled": true,
+                                    "type": "",
+                                    "procedure": [
+                                        {
+                                            "type": 13,
+                                            "ID": "",
+                                            "meta": {
+                                                "name": "",
+                                                "module": ""
+                                            },
+                                            "argCount": 0,
+                                            "args": [],
+                                            "print": false,
+                                            "enabled": true,
+                                            "selected": false,
+                                            "selectGeom": false,
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-s4llqq54l",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "printstr",
+                                                    "invalidVar": false,
+                                                    "linked": false,
+                                                    "jsValue": "printstr_"
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "\"\"",
+                                                    "linked": false,
+                                                    "usedVars": [],
+                                                    "invalidVar": false,
+                                                    "jsValue": "\"\""
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "printstr",
+                                            "hasError": false,
+                                            "selectGeom": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-6c28c1ys4ls",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "str_to_add",
+                                                    "invalidVar": false,
+                                                    "linked": false,
+                                                    "jsValue": "str_to_add_"
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "\"\"",
+                                                    "linked": false,
+                                                    "usedVars": [],
+                                                    "invalidVar": false,
+                                                    "jsValue": "\"\""
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "str_to_add",
+                                            "hasError": false,
+                                            "selectGeom": false
+                                        },
+                                        {
+                                            "type": 4,
+                                            "ID": "prod-4hxkwf0t5da",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "item",
+                                                    "value": "i",
+                                                    "invalidVar": false,
+                                                    "linked": false,
+                                                    "jsValue": "i_"
+                                                },
+                                                {
+                                                    "name": "list",
+                                                    "value": "range(0, num_iterations)",
+                                                    "linked": false,
+                                                    "usedVars": [
+                                                        "num_iterations"
+                                                    ],
+                                                    "invalidVar": false,
+                                                    "jsValue": "range(0, num_iterations_)"
+                                                }
+                                            ],
+                                            "children": [
+                                                {
+                                                    "type": 13,
+                                                    "ID": "prod-frrkic9rsno",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~3",
+                                                    "meta": {
+                                                        "name": "",
+                                                        "module": ""
+                                                    },
+                                                    "argCount": 0,
+                                                    "args": [],
+                                                    "print": false,
+                                                    "enabled": true,
+                                                    "selected": false,
+                                                    "selectGeom": false,
+                                                    "hasError": false
+                                                },
+                                                {
+                                                    "type": 0,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~3",
+                                                    "ID": "prod-1hb196d6q9u",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "argCount": 2,
+                                                    "args": [
+                                                        {
+                                                            "name": "var_name",
+                                                            "value": "str_to_add",
+                                                            "invalidVar": false,
+                                                            "linked": false,
+                                                            "jsValue": "str_to_add_"
+                                                        },
+                                                        {
+                                                            "name": "value",
+                                                            "value": "str_to_add + \"#\"",
+                                                            "linked": false,
+                                                            "usedVars": [
+                                                                "str_to_add"
+                                                            ],
+                                                            "invalidVar": false,
+                                                            "jsValue": "str_to_add_ + \"#\""
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "variable": "str_to_add",
+                                                    "hasError": false,
+                                                    "selectGeom": false
+                                                },
+                                                {
+                                                    "type": 0,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~3",
+                                                    "ID": "prod-x2c0ghv113",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "argCount": 2,
+                                                    "args": [
+                                                        {
+                                                            "name": "var_name",
+                                                            "value": "printstr",
+                                                            "linked": false,
+                                                            "invalidVar": false,
+                                                            "jsValue": "printstr_"
+                                                        },
+                                                        {
+                                                            "name": "value",
+                                                            "value": "printstr + '\\n' + str_to_add",
+                                                            "linked": false,
+                                                            "usedVars": [
+                                                                "str_to_add",
+                                                                "printstr"
+                                                            ],
+                                                            "invalidVar": false,
+                                                            "jsValue": "printstr_ + '\\n' + str_to_add_"
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "variable": "printstr",
+                                                    "hasError": false,
+                                                    "selectGeom": false
+                                                }
+                                            ],
+                                            "variable": "i",
+                                            "selected": false,
+                                            "hasError": false,
+                                            "selectGeom": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-bxj3dy1cyto",
+                                            "enabled": true,
+                                            "print": true,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "print",
+                                                    "invalidVar": false,
+                                                    "linked": false,
+                                                    "jsValue": "print_"
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "printstr",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "usedVars": [
+                                                        "printstr"
+                                                    ],
+                                                    "jsValue": "printstr_"
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "print",
+                                            "hasError": false,
+                                            "selectGeom": false
+                                        }
+                                    ],
+                                    "state": {
+                                        "procedure": []
+                                    },
+                                    "input": "~flowchart~nodes~0~output~edges~0~target",
+                                    "output": {
+                                        "name": "output",
+                                        "type": 1,
+                                        "edges": [
+                                            {
+                                                "source": "~flowchart~nodes~0~output~edges~0~target~parentNode~output",
+                                                "target": {
+                                                    "name": "input",
+                                                    "type": 0,
+                                                    "edges": [
+                                                        "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0"
+                                                    ],
+                                                    "meta": {
+                                                        "mode": 0,
+                                                        "opts": {}
+                                                    },
+                                                    "parentNode": {
+                                                        "name": "End",
+                                                        "id": "node_vvh7w3v91am",
+                                                        "position": {
+                                                            "x": 5340,
+                                                            "y": 5260
+                                                        },
+                                                        "enabled": true,
+                                                        "type": "end",
+                                                        "procedure": [
+                                                            {
+                                                                "type": 13,
+                                                                "ID": "",
+                                                                "meta": {
+                                                                    "name": "",
+                                                                    "module": ""
+                                                                },
+                                                                "argCount": 0,
+                                                                "args": [],
+                                                                "print": false,
+                                                                "enabled": true,
+                                                                "selected": false,
+                                                                "selectGeom": false,
+                                                                "hasError": false
+                                                            },
+                                                            {
+                                                                "type": 11,
+                                                                "ID": "",
+                                                                "meta": {
+                                                                    "name": "",
+                                                                    "module": ""
+                                                                },
+                                                                "argCount": 2,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "__model__",
+                                                                        "value": "",
+                                                                        "linked": false
+                                                                    },
+                                                                    {
+                                                                        "name": "value",
+                                                                        "value": "",
+                                                                        "linked": false
+                                                                    }
+                                                                ],
+                                                                "print": false,
+                                                                "enabled": true,
+                                                                "selected": false,
+                                                                "selectGeom": false,
+                                                                "hasError": false
+                                                            }
+                                                        ],
+                                                        "state": {
+                                                            "procedure": []
+                                                        },
+                                                        "input": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target",
+                                                        "output": {
+                                                            "name": "output",
+                                                            "type": 1,
+                                                            "edges": [],
+                                                            "meta": {
+                                                                "mode": 0
+                                                            },
+                                                            "parentNode": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode"
+                                                        },
+                                                        "hasError": false,
+                                                        "hasExecuted": true
+                                                    }
+                                                },
+                                                "selected": false
+                                            }
+                                        ],
+                                        "meta": {
+                                            "mode": 0
+                                        },
+                                        "parentNode": "~flowchart~nodes~0~output~edges~0~target~parentNode",
+                                        "model": null
+                                    },
+                                    "hasError": false,
+                                    "hasExecuted": true
+                                }
+                            },
+                            "selected": false
+                        }
+                    ],
+                    "meta": {
+                        "mode": 0
+                    },
+                    "parentNode": "~flowchart~nodes~0",
+                    "model": null
+                },
+                "hasError": false,
+                "hasExecuted": true
+            },
+            "~flowchart~nodes~0~output~edges~0~target~parentNode",
+            "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode"
+        ],
+        "edges": [
+            "~flowchart~nodes~0~output~edges~0",
+            "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0"
+        ],
+        "functions": [],
+        "ordered": true,
+        "last_updated": "2019-08-18T07:48:59.171Z"
+    },
+    "version": 3,
+    "settings": "{\"normals\":{\"show\":false,\"size\":5},\"axes\":{\"show\":true,\"size\":50},\"grid\":{\"show\":true,\"size\":500},\"positions\":{\"show\":true,\"size\":0.5},\"tjs_summary\":{\"show\":false},\"gi_summary\":{\"show\":false},\"wireframe\":{\"show\":false},\"camera\":{\"pos\":{\"x\":-80,\"y\":-80,\"z\":80},\"pos_x\":-80,\"pos_y\":-80,\"pos_z\":80,\"target\":{\"x\":0,\"y\":0,\"z\":0}},\"colors\":{\"viewer_bg\":\"#E6E6E6\",\"position\":\"#000000\",\"position_s\":\"#0033FF\",\"vertex_s\":\"#FFCC00\",\"face_f\":\"#FFFFFF\",\"face_f_s\":\"#4949BD\",\"face_b\":\"#DDDDDD\",\"face_b_s\":\"#00006D\"},\"ambient_light\":{\"show\":true,\"color\":\"#FFFFFF\",\"intensity\":0.5},\"hemisphere_light\":{\"show\":true,\"helper\":false,\"skyColor\":\"#FFFFFF\",\"groundColor\":\"#FFFFFF\",\"intensity\":0.5},\"directional_light\":{\"show\":false,\"helper\":false,\"color\":\"#FFFFFF\",\"intensity\":1,\"shadow\":true,\"shadowSize\":4,\"azimuth\":90,\"altitude\":45,\"distance\":10000},\"ground\":{\"show\":false,\"width\":1000,\"length\":1000,\"height\":-0.5,\"color\":\"#FFFFFF\",\"shininess\":0},\"select\":{\"selector\":{\"id\":5,\"name\":\"Faces\"},\"tab\":\"0\"},\"version\":\"0.5.0\"}"
+}
