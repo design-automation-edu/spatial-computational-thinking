@@ -1,0 +1,206 @@
+{
+    "name": "Steps assignment, Part 4",
+    "author": "new_user",
+    "flowchart": {
+        "id": "10dd9248-7ed9-9048-0a0b-d80de946bfaa",
+        "name": "Steps assignment, Part 4",
+        "description": "Parameter settings: num_steps = 17, step_rise = 15, step_depth = 30, step_wdith = 100, rail_ht = 100",
+        "language": "js",
+        "meta": {
+            "selected_nodes": [
+                0
+            ]
+        },
+        "nodes": [
+            {
+                "name": "Start",
+                "id": "node_x1lrm2w9pzh",
+                "position": {
+                    "x": 5340,
+                    "y": 5000
+                },
+                "enabled": true,
+                "type": "start",
+                "procedure": [
+                    {
+                        "type": 13,
+                        "ID": "",
+                        "meta": {
+                            "name": "",
+                            "module": ""
+                        },
+                        "argCount": 0,
+                        "args": [],
+                        "print": false,
+                        "enabled": true,
+                        "selected": false,
+                        "selectGeom": false,
+                        "hasError": false
+                    }
+                ],
+                "state": {
+                    "procedure": []
+                },
+                "input": {
+                    "name": "input",
+                    "type": 0,
+                    "edges": [],
+                    "meta": {
+                        "mode": 0,
+                        "opts": {}
+                    },
+                    "parentNode": "~flowchart~nodes~0"
+                },
+                "output": {
+                    "name": "output",
+                    "type": 1,
+                    "edges": [
+                        {
+                            "source": "~flowchart~nodes~0~output",
+                            "target": {
+                                "name": "input",
+                                "type": 0,
+                                "edges": [
+                                    "~flowchart~nodes~0~output~edges~0"
+                                ],
+                                "meta": {
+                                    "mode": 0,
+                                    "opts": {}
+                                },
+                                "parentNode": {
+                                    "name": "End",
+                                    "id": "node_bstcdv0x03l",
+                                    "position": {
+                                        "x": 5340,
+                                        "y": 5100
+                                    },
+                                    "enabled": true,
+                                    "type": "end",
+                                    "procedure": [
+                                        {
+                                            "type": 13,
+                                            "ID": "",
+                                            "meta": {
+                                                "name": "",
+                                                "module": ""
+                                            },
+                                            "argCount": 0,
+                                            "args": [],
+                                            "print": false,
+                                            "enabled": true,
+                                            "selected": false,
+                                            "selectGeom": false,
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 8,
+                                            "ID": "prod-mc0exl1yu9",
+                                            "enabled": true,
+                                            "print": false,
+                                            "meta": {
+                                                "module": "util",
+                                                "name": "ImportData"
+                                            },
+                                            "argCount": 4,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "data",
+                                                    "invalidVar": false,
+                                                    "jsValue": "data_",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "__model__",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "model_data",
+                                                    "value": "\"https://raw.githubusercontent.com/design-automation-edu/spatial-computational-thinking/master/2019_sem2/edx_assignments/SCT_W5_Assignment_4.gi\"",
+                                                    "linked": false,
+                                                    "jsValue": "\"https://raw.githubusercontent.com/design-automation-edu/spatial-computational-thinking/master/2019_sem2/edx_assignments/SCT_W5_Assignment_4.gi\"",
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "data_format",
+                                                    "value": "'gi'",
+                                                    "jsValue": "'gi'",
+                                                    "usedVars": [],
+                                                    "invalidVar": false,
+                                                    "linked": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "data",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 11,
+                                            "ID": "Return",
+                                            "meta": {
+                                                "name": "",
+                                                "module": ""
+                                            },
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "__model__",
+                                                    "value": "",
+                                                    "jsValue": "",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "",
+                                                    "jsValue": "",
+                                                    "linked": false
+                                                }
+                                            ],
+                                            "print": false,
+                                            "enabled": true,
+                                            "selected": false,
+                                            "selectGeom": false,
+                                            "hasError": false
+                                        }
+                                    ],
+                                    "state": {
+                                        "procedure": []
+                                    },
+                                    "input": "~flowchart~nodes~0~output~edges~0~target",
+                                    "output": {
+                                        "name": "output",
+                                        "type": 1,
+                                        "edges": [],
+                                        "meta": {
+                                            "mode": 0
+                                        },
+                                        "parentNode": "~flowchart~nodes~0~output~edges~0~target~parentNode"
+                                    },
+                                    "hasError": false,
+                                    "hasExecuted": true
+                                }
+                            },
+                            "selected": false
+                        }
+                    ],
+                    "meta": {
+                        "mode": 0
+                    },
+                    "parentNode": "~flowchart~nodes~0"
+                },
+                "hasError": false,
+                "hasExecuted": true
+            },
+            "~flowchart~nodes~0~output~edges~0~target~parentNode"
+        ],
+        "edges": [
+            "~flowchart~nodes~0~output~edges~0"
+        ],
+        "functions": [],
+        "ordered": true,
+        "last_updated": "2019-09-20T06:45:53.146Z"
+    },
+    "version": 3,
+    "settings": "{\"normals\":{\"show\":false,\"size\":5},\"axes\":{\"show\":true,\"size\":50},\"grid\":{\"show\":true,\"size\":500},\"positions\":{\"show\":false,\"size\":1.3},\"tjs_summary\":{\"show\":false},\"gi_summary\":{\"show\":false},\"wireframe\":{\"show\":false},\"camera\":{\"pos\":{\"x\":27.625784158298515,\"y\":18.574061970220928,\"z\":79.72439652234425},\"pos_x\":-32.0031766993844,\"pos_y\":-17.445707375934155,\"pos_z\":86.94315956911609,\"target\":{\"x\":0,\"y\":0,\"z\":0}},\"colors\":{\"viewer_bg\":\"#E6E6E6\",\"position\":\"#000000\",\"position_s\":\"#0033FF\",\"vertex_s\":\"#FFCC00\",\"face_f\":\"#FFFFFF\",\"face_f_s\":\"#4949BD\",\"face_b\":\"#DDDDDD\",\"face_b_s\":\"#00006D\"},\"ambient_light\":{\"show\":true,\"color\":\"#FFFFFF\",\"intensity\":0.5},\"hemisphere_light\":{\"show\":true,\"helper\":false,\"skyColor\":\"#FFFFFF\",\"groundColor\":\"#FFFFFF\",\"intensity\":0.5},\"directional_light\":{\"show\":false,\"helper\":false,\"color\":\"#FFFFFF\",\"intensity\":1,\"shadow\":true,\"shadowSize\":4,\"azimuth\":90,\"altitude\":45,\"distance\":10000},\"ground\":{\"show\":false,\"width\":1000,\"length\":1000,\"height\":-0.5,\"color\":\"#FFFFFF\",\"shininess\":0},\"select\":{\"selector\":{\"id\":8,\"name\":\"Polygons\"},\"tab\":\"0\"},\"version\":\"0.5.1\"}"
+}
