@@ -1,5 +1,5 @@
 {
-    "name": "print_square",
+    "name": "print_square%20(1)",
     "author": "new_user",
     "flowchart": {
         "id": "9ed666e3-56b9-1ee1-b0fe-002f94fb15a3",
@@ -14,7 +14,7 @@
         "nodes": [
             {
                 "name": "Start",
-                "id": "node_tj9emuaoof",
+                "id": "node_4e0kt6wotqp",
                 "position": {
                     "x": 5340,
                     "y": 5000
@@ -101,7 +101,7 @@
                                 },
                                 "parentNode": {
                                     "name": "Node",
-                                    "id": "node_wi6v6dcgoho",
+                                    "id": "node_j0ikzhshuw",
                                     "position": {
                                         "x": 5340,
                                         "y": 5200
@@ -147,7 +147,7 @@
                                                     },
                                                     "parentNode": {
                                                         "name": "End",
-                                                        "id": "node_p2ndxn02an9",
+                                                        "id": "node_fn4ixhaa9cu",
                                                         "position": {
                                                             "x": 5340,
                                                             "y": 5400
@@ -482,6 +482,36 @@
                                                                 "hasError": false
                                                             },
                                                             {
+                                                                "type": 0,
+                                                                "ID": "prod-wiba5o5jeb",
+                                                                "enabled": true,
+                                                                "print": false,
+                                                                "argCount": 2,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "var_name",
+                                                                        "value": "@hud",
+                                                                        "invalidVar": false,
+                                                                        "jsValue": "@hud",
+                                                                        "usedVars": [],
+                                                                        "linked": false
+                                                                    },
+                                                                    {
+                                                                        "name": "value",
+                                                                        "value": "sgl_str",
+                                                                        "linked": false,
+                                                                        "jsValue": "sgl_str_",
+                                                                        "usedVars": [
+                                                                            "sgl_str"
+                                                                        ],
+                                                                        "invalidVar": false
+                                                                    }
+                                                                ],
+                                                                "selected": false,
+                                                                "variable": null,
+                                                                "hasError": false
+                                                            },
+                                                            {
                                                                 "type": 11,
                                                                 "ID": "Return",
                                                                 "meta": {
@@ -498,8 +528,7 @@
                                                                     },
                                                                     {
                                                                         "name": "value",
-                                                                        "value": "sgl_str",
-                                                                        "jsValue": "sgl_str_",
+                                                                        "value": "",
                                                                         "linked": false,
                                                                         "usedVars": [
                                                                             "sgl_str"
@@ -563,8 +592,8 @@
         ],
         "functions": [],
         "ordered": true,
-        "last_updated": "2019-09-18T03:44:15.443Z"
+        "last_updated": "2019-09-23T03:53:27.407Z"
     },
     "version": 1,
-    "settings": "{\"normals\":{\"show\":false,\"size\":5},\"axes\":{\"show\":true,\"size\":50},\"grid\":{\"show\":true,\"size\":500},\"positions\":{\"show\":true,\"size\":0.5},\"tjs_summary\":{\"show\":false},\"gi_summary\":{\"show\":false},\"wireframe\":{\"show\":false},\"camera\":{\"pos\":{\"x\":-80,\"y\":-80,\"z\":80},\"pos_x\":-80,\"pos_y\":-80,\"pos_z\":80,\"target\":{\"x\":0,\"y\":0,\"z\":0}},\"colors\":{\"viewer_bg\":\"#E6E6E6\",\"position\":\"#000000\",\"position_s\":\"#0033FF\",\"vertex_s\":\"#FFCC00\",\"face_f\":\"#FFFFFF\",\"face_f_s\":\"#4949BD\",\"face_b\":\"#DDDDDD\",\"face_b_s\":\"#00006D\"},\"ambient_light\":{\"show\":true,\"color\":\"#FFFFFF\",\"intensity\":0.5},\"hemisphere_light\":{\"show\":true,\"helper\":false,\"skyColor\":\"#FFFFFF\",\"groundColor\":\"#FFFFFF\",\"intensity\":0.5},\"directional_light\":{\"show\":false,\"helper\":false,\"color\":\"#FFFFFF\",\"intensity\":1,\"shadow\":true,\"shadowSize\":4,\"azimuth\":90,\"altitude\":45,\"distance\":10000},\"ground\":{\"show\":false,\"width\":1000,\"length\":1000,\"height\":-0.5,\"color\":\"#FFFFFF\",\"shininess\":0},\"select\":{\"selector\":{\"id\":8,\"name\":\"Polygons\"},\"tab\":\"0\"},\"version\":\"0.4.38\"}"
+    "settings": "{\"normals\":{\"show\":false,\"size\":5},\"axes\":{\"show\":true,\"size\":50},\"grid\":{\"show\":true,\"size\":500},\"positions\":{\"show\":true,\"size\":0.5},\"tjs_summary\":{\"show\":false},\"gi_summary\":{\"show\":false},\"wireframe\":{\"show\":false},\"camera\":{\"pos\":{\"x\":-80,\"y\":-80,\"z\":80},\"pos_x\":-80,\"pos_y\":-80,\"pos_z\":80,\"target\":{\"x\":0,\"y\":0,\"z\":0}},\"colors\":{\"viewer_bg\":\"#E6E6E6\",\"position\":\"#000000\",\"position_s\":\"#0033FF\",\"vertex_s\":\"#FFCC00\",\"face_f\":\"#FFFFFF\",\"face_f_s\":\"#4949BD\",\"face_b\":\"#DDDDDD\",\"face_b_s\":\"#00006D\"},\"ambient_light\":{\"show\":true,\"color\":\"#FFFFFF\",\"intensity\":0.5},\"hemisphere_light\":{\"show\":true,\"helper\":false,\"skyColor\":\"#FFFFFF\",\"groundColor\":\"#FFFFFF\",\"intensity\":0.5},\"directional_light\":{\"show\":false,\"helper\":false,\"color\":\"#FFFFFF\",\"intensity\":1,\"shadow\":true,\"shadowSize\":4,\"azimuth\":90,\"altitude\":45,\"distance\":10000},\"ground\":{\"show\":false,\"width\":1000,\"length\":1000,\"height\":-0.5,\"color\":\"#FFFFFF\",\"shininess\":0},\"select\":{\"selector\":{\"id\":5,\"name\":\"Faces\"},\"tab\":\"0\"},\"version\":\"0.5.1\"}"
 }
