@@ -14,7 +14,7 @@
         "nodes": [
             {
                 "name": "Start",
-                "id": "node_2l40l4hvjeb",
+                "id": "node_832uwwcqj8f",
                 "position": {
                     "x": 5340,
                     "y": 5000
@@ -104,7 +104,7 @@
                                 },
                                 "parentNode": {
                                     "name": "Node",
-                                    "id": "node_a834tn9fbdn",
+                                    "id": "node_0mb5itawcx2",
                                     "position": {
                                         "x": 5340,
                                         "y": 5200
@@ -125,33 +125,6 @@
                                             "enabled": true,
                                             "selected": false,
                                             "selectGeom": false,
-                                            "hasError": false
-                                        },
-                                        {
-                                            "type": 0,
-                                            "ID": "prod-vhsgy7ssksn",
-                                            "enabled": true,
-                                            "print": false,
-                                            "argCount": 2,
-                                            "args": [
-                                                {
-                                                    "name": "var_name",
-                                                    "value": "ints",
-                                                    "invalidVar": false,
-                                                    "jsValue": "ints_",
-                                                    "linked": false
-                                                },
-                                                {
-                                                    "name": "value",
-                                                    "value": "[0, 1, 2]",
-                                                    "linked": false,
-                                                    "jsValue": "[0, 1, 2]",
-                                                    "usedVars": [],
-                                                    "invalidVar": false
-                                                }
-                                            ],
-                                            "selected": false,
-                                            "variable": "ints",
                                             "hasError": false
                                         },
                                         {
@@ -288,7 +261,7 @@
                                                 {
                                                     "type": 13,
                                                     "ID": "",
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~6",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~5",
                                                     "meta": {
                                                         "name": "",
                                                         "module": ""
@@ -303,7 +276,7 @@
                                                 },
                                                 {
                                                     "type": 0,
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~6",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~5",
                                                     "ID": "prod-ko42d8cmw2d",
                                                     "enabled": true,
                                                     "print": false,
@@ -356,7 +329,7 @@
                                                 {
                                                     "type": 13,
                                                     "ID": "",
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~7",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~6",
                                                     "meta": {
                                                         "name": "",
                                                         "module": ""
@@ -371,7 +344,7 @@
                                                 },
                                                 {
                                                     "type": 0,
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~7",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~6",
                                                     "ID": "prod-wmvyxuaxbu",
                                                     "enabled": true,
                                                     "print": false,
@@ -413,7 +386,7 @@
                                                 {
                                                     "type": 13,
                                                     "ID": "",
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~8",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~7",
                                                     "meta": {
                                                         "name": "",
                                                         "module": ""
@@ -428,7 +401,7 @@
                                                 },
                                                 {
                                                     "type": 0,
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~8",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~7",
                                                     "ID": "prod-fr09k29mpg",
                                                     "enabled": true,
                                                     "print": false,
@@ -514,7 +487,7 @@
                                                     },
                                                     "parentNode": {
                                                         "name": "End",
-                                                        "id": "node_54jn961j2ur",
+                                                        "id": "node_v5mpp1228c",
                                                         "position": {
                                                             "x": 5340,
                                                             "y": 5400
@@ -615,7 +588,7 @@
         ],
         "functions": [],
         "ordered": true,
-        "last_updated": "2019-09-18T04:53:54.380Z"
+        "last_updated": "2019-09-23T04:43:33.992Z"
     },
     "version": 1,
     "settings": "{\"normals\":{\"show\":false,\"size\":5},\"axes\":{\"show\":true,\"size\":50},\"grid\":{\"show\":true,\"size\":500},\"positions\":{\"show\":true,\"size\":0.5},\"tjs_summary\":{\"show\":false},\"gi_summary\":{\"show\":false},\"wireframe\":{\"show\":false},\"camera\":{\"pos\":{\"x\":-80,\"y\":-80,\"z\":80},\"pos_x\":-80,\"pos_y\":-80,\"pos_z\":80,\"target\":{\"x\":0,\"y\":0,\"z\":0}},\"colors\":{\"viewer_bg\":\"#E6E6E6\",\"position\":\"#000000\",\"position_s\":\"#0033FF\",\"vertex_s\":\"#FFCC00\",\"face_f\":\"#FFFFFF\",\"face_f_s\":\"#4949BD\",\"face_b\":\"#DDDDDD\",\"face_b_s\":\"#00006D\"},\"ambient_light\":{\"show\":true,\"color\":\"#FFFFFF\",\"intensity\":0.5},\"hemisphere_light\":{\"show\":true,\"helper\":false,\"skyColor\":\"#FFFFFF\",\"groundColor\":\"#FFFFFF\",\"intensity\":0.5},\"directional_light\":{\"show\":false,\"helper\":false,\"color\":\"#FFFFFF\",\"intensity\":1,\"shadow\":true,\"shadowSize\":4,\"azimuth\":90,\"altitude\":45,\"distance\":10000},\"ground\":{\"show\":false,\"width\":1000,\"length\":1000,\"height\":-0.5,\"color\":\"#FFFFFF\",\"shininess\":0},\"select\":{\"selector\":{\"id\":5,\"name\":\"Faces\"},\"tab\":\"0\"},\"version\":\"0.5.1\"}"
