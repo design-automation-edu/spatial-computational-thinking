@@ -1,7 +1,6 @@
 {
-    "name": "fionacci sequence",
+    "name": "fionacci_sequence",
     "author": "new_user",
-    "version": 1,
     "flowchart": {
         "id": "5d6d0b24-a263-930e-0a46-58b7e08ab683",
         "name": "fionacci sequence",
@@ -15,7 +14,7 @@
         "nodes": [
             {
                 "name": "Start",
-                "id": "node_6f83sujtl08",
+                "id": "node_i4x601f8zyn",
                 "position": {
                     "x": 5340,
                     "y": 5000
@@ -70,7 +69,7 @@
                                 },
                                 "parentNode": {
                                     "name": "Node",
-                                    "id": "node_qgo8gl7agpd",
+                                    "id": "node_hx2lwapp9pc",
                                     "position": {
                                         "x": 5340,
                                         "y": 5200
@@ -116,7 +115,7 @@
                                                     },
                                                     "parentNode": {
                                                         "name": "End",
-                                                        "id": "node_gzlirsq2zsd",
+                                                        "id": "node_ryagd9041ee",
                                                         "position": {
                                                             "x": 5340,
                                                             "y": 5400
@@ -209,12 +208,11 @@
                                                                     },
                                                                     {
                                                                         "name": "list",
-                                                                        "value": "range(listLen(values), n)",
+                                                                        "value": "range(2, n)",
                                                                         "linked": false,
-                                                                        "jsValue": "range(listLen(values_), n_)",
+                                                                        "jsValue": "range(2, n_)",
                                                                         "usedVars": [
-                                                                            "n",
-                                                                            "values"
+                                                                            "n"
                                                                         ],
                                                                         "invalidVar": false
                                                                     }
@@ -388,7 +386,8 @@
         ],
         "functions": [],
         "ordered": true,
-        "last_updated": "2019-09-26T09:05:01.328Z"
+        "last_updated": "2019-09-27T03:17:26.710Z"
     },
+    "version": 1,
     "settings": "{\"normals\":{\"show\":false,\"size\":5},\"axes\":{\"show\":true,\"size\":50},\"grid\":{\"show\":true,\"size\":500},\"positions\":{\"show\":true,\"size\":0.5},\"tjs_summary\":{\"show\":false},\"gi_summary\":{\"show\":false},\"wireframe\":{\"show\":false},\"camera\":{\"pos\":{\"x\":-80,\"y\":-80,\"z\":80},\"pos_x\":-80,\"pos_y\":-80,\"pos_z\":80,\"target\":{\"x\":0,\"y\":0,\"z\":0}},\"colors\":{\"viewer_bg\":\"#E6E6E6\",\"position\":\"#000000\",\"position_s\":\"#0033FF\",\"vertex_s\":\"#FFCC00\",\"face_f\":\"#FFFFFF\",\"face_f_s\":\"#4949BD\",\"face_b\":\"#DDDDDD\",\"face_b_s\":\"#00006D\"},\"ambient_light\":{\"show\":true,\"color\":\"#FFFFFF\",\"intensity\":0.5},\"hemisphere_light\":{\"show\":true,\"helper\":false,\"skyColor\":\"#FFFFFF\",\"groundColor\":\"#FFFFFF\",\"intensity\":0.5},\"directional_light\":{\"show\":false,\"helper\":false,\"color\":\"#FFFFFF\",\"intensity\":1,\"shadow\":true,\"shadowSize\":4,\"azimuth\":90,\"altitude\":45,\"distance\":10000},\"ground\":{\"show\":false,\"width\":1000,\"length\":1000,\"height\":-0.5,\"color\":\"#FFFFFF\",\"shininess\":0},\"select\":{\"selector\":{\"id\":5,\"name\":\"Faces\"},\"tab\":\"0\"},\"version\":\"0.4.38\"}"
 }
