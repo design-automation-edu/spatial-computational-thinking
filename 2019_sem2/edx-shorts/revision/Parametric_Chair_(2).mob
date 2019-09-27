@@ -1,5 +1,5 @@
 {
-    "name": "Parametric_Chair_(2)",
+    "name": "Parametric_Chair",
     "author": "new_user",
     "flowchart": {
         "id": "11ce08fd-f091-e59e-3adc-32a81c9f41b9",
@@ -14,7 +14,7 @@
         "nodes": [
             {
                 "name": "Start",
-                "id": "node_3d7mhpovzos",
+                "id": "node_tickk1zbfr",
                 "position": {
                     "x": 5340,
                     "y": 5000
@@ -114,8 +114,8 @@
                         "args": [
                             {
                                 "name": "const_name",
-                                "value": "ang",
-                                "jsValue": "ang_",
+                                "value": "ang_list",
+                                "jsValue": "ang_list_",
                                 "linked": false,
                                 "invalidVar": false
                             },
@@ -287,7 +287,7 @@
                                 },
                                 "parentNode": {
                                     "name": "Draw Cross Section",
-                                    "id": "node_nepgs2d7kn9",
+                                    "id": "node_xt5c38xnh2q",
                                     "position": {
                                         "x": 5340,
                                         "y": 5200
@@ -326,12 +326,12 @@
                                                 },
                                                 {
                                                     "name": "value",
-                                                    "value": "listCopy(ang)",
+                                                    "value": "listCopy(ang_list)",
                                                     "linked": false,
-                                                    "jsValue": "listCopy(ang_)",
+                                                    "jsValue": "listCopy(ang_list_)",
                                                     "invalidVar": false,
                                                     "usedVars": [
-                                                        "ang"
+                                                        "ang_list"
                                                     ]
                                                 }
                                             ],
@@ -1662,7 +1662,7 @@
                                                     },
                                                     "parentNode": {
                                                         "name": "End",
-                                                        "id": "node_t6jb3i1r81n",
+                                                        "id": "node_smkgldrwdyg",
                                                         "position": {
                                                             "x": 5340,
                                                             "y": 5400
@@ -4057,7 +4057,7 @@
             }
         ],
         "ordered": true,
-        "last_updated": "2019-09-27T08:39:46.843Z",
+        "last_updated": "2019-09-27T08:42:59.490Z",
         "subFunctions": []
     },
     "version": 1,
