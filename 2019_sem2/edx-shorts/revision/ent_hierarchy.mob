@@ -1,0 +1,1080 @@
+{
+    "name": "ent_hierarchy",
+    "author": "new_user",
+    "version": 1,
+    "flowchart": {
+        "id": "b2356043-b1e9-0c4b-dcd5-2c87326c3326",
+        "name": "ent_hierarchy",
+        "description": "",
+        "language": "js",
+        "meta": {
+            "selected_nodes": [
+                0
+            ]
+        },
+        "nodes": [
+            {
+                "name": "Start",
+                "id": "node_qdhzfmej6l",
+                "position": {
+                    "x": 5340,
+                    "y": 5000
+                },
+                "enabled": true,
+                "type": "start",
+                "procedure": [
+                    {
+                        "type": 13,
+                        "ID": "",
+                        "meta": {
+                            "name": "",
+                            "module": ""
+                        },
+                        "argCount": 0,
+                        "args": [],
+                        "print": false,
+                        "enabled": true,
+                        "selected": false,
+                        "selectGeom": false,
+                        "hasError": false
+                    }
+                ],
+                "state": {
+                    "procedure": []
+                },
+                "input": {
+                    "name": "input",
+                    "type": 0,
+                    "edges": [],
+                    "meta": {
+                        "mode": 0,
+                        "opts": {}
+                    },
+                    "parentNode": "~flowchart~nodes~0"
+                },
+                "output": {
+                    "name": "output",
+                    "type": 1,
+                    "edges": [
+                        {
+                            "source": "~flowchart~nodes~0~output",
+                            "target": {
+                                "name": "input",
+                                "type": 0,
+                                "edges": [
+                                    "~flowchart~nodes~0~output~edges~0"
+                                ],
+                                "meta": {
+                                    "mode": 0,
+                                    "opts": {}
+                                },
+                                "parentNode": {
+                                    "name": "Node",
+                                    "id": "node_u4t3b1yrj7j",
+                                    "position": {
+                                        "x": 5340,
+                                        "y": 5200
+                                    },
+                                    "enabled": true,
+                                    "type": "",
+                                    "procedure": [
+                                        {
+                                            "type": 13,
+                                            "ID": "",
+                                            "meta": {
+                                                "name": "",
+                                                "module": ""
+                                            },
+                                            "argCount": 0,
+                                            "args": [],
+                                            "print": false,
+                                            "enabled": true,
+                                            "selected": false,
+                                            "selectGeom": false,
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-99937ucut9r",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "sz",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "sz_"
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "11",
+                                                    "linked": false,
+                                                    "jsValue": "11",
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "sz",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 8,
+                                            "ID": "prod-6deu3td1sxd",
+                                            "enabled": true,
+                                            "print": false,
+                                            "meta": {
+                                                "module": "pattern",
+                                                "name": "Grid"
+                                            },
+                                            "argCount": 6,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "grid_sq",
+                                                    "invalidVar": false,
+                                                    "jsValue": "grid_sq_",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "__model__",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "origin",
+                                                    "value": "XY",
+                                                    "linked": false,
+                                                    "jsValue": "XY",
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "size",
+                                                    "value": "10",
+                                                    "linked": false,
+                                                    "jsValue": "10",
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "num_positions",
+                                                    "value": "sz",
+                                                    "linked": false,
+                                                    "jsValue": "sz_",
+                                                    "usedVars": [
+                                                        "sz"
+                                                    ],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "method",
+                                                    "value": "'squares'",
+                                                    "jsValue": "'squares'",
+                                                    "usedVars": [],
+                                                    "invalidVar": false,
+                                                    "linked": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "grid_sq",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-d5l5h7p2uiw",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "all_ps",
+                                                    "invalidVar": false,
+                                                    "jsValue": "all_ps_",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "#ps",
+                                                    "linked": false,
+                                                    "jsValue": "__modules__.query.Get(__params__.model, 'ps', null)",
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "all_ps",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-54gxaepdq4j",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "grid_row",
+                                                    "invalidVar": false,
+                                                    "jsValue": "grid_row_",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "[]",
+                                                    "linked": false,
+                                                    "jsValue": "[]",
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "grid_row",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 4,
+                                            "ID": "prod-f1qzzksj3va",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "item",
+                                                    "value": "ps_i",
+                                                    "invalidVar": false,
+                                                    "jsValue": "ps_i_",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "list",
+                                                    "value": "range(0, sz)",
+                                                    "linked": false,
+                                                    "jsValue": "range(0, sz_)",
+                                                    "usedVars": [
+                                                        "sz"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "children": [
+                                                {
+                                                    "type": 13,
+                                                    "ID": "",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~5",
+                                                    "meta": {
+                                                        "name": "",
+                                                        "module": ""
+                                                    },
+                                                    "argCount": 0,
+                                                    "args": [],
+                                                    "print": false,
+                                                    "enabled": true,
+                                                    "selected": false,
+                                                    "selectGeom": false,
+                                                    "hasError": false
+                                                },
+                                                {
+                                                    "type": 8,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~5",
+                                                    "ID": "prod-7bs71k29yi5",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "meta": {
+                                                        "module": "list",
+                                                        "name": "Add"
+                                                    },
+                                                    "argCount": 4,
+                                                    "args": [
+                                                        {
+                                                            "name": "__none__",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "list",
+                                                            "value": "grid_row",
+                                                            "linked": false,
+                                                            "jsValue": "grid_row_",
+                                                            "usedVars": [
+                                                                "grid_row"
+                                                            ],
+                                                            "invalidVar": false
+                                                        },
+                                                        {
+                                                            "name": "item",
+                                                            "value": "all_ps[ps_i * sz : (ps_i + 1) * sz]",
+                                                            "linked": false,
+                                                            "invalidVar": false,
+                                                            "jsValue": "all_ps_.slice(ps_i_ * sz_, (ps_i_ + 1) * sz_)",
+                                                            "usedVars": [
+                                                                "sz",
+                                                                "all_ps",
+                                                                "ps_i"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "method",
+                                                            "value": "'to_start'",
+                                                            "jsValue": "'to_start'",
+                                                            "usedVars": [],
+                                                            "invalidVar": false,
+                                                            "linked": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "hasError": false
+                                                }
+                                            ],
+                                            "variable": "ps_i",
+                                            "selected": false,
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-n3k5cknjgb",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "grid_col",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "grid_col_"
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "listZip2(grid_row)",
+                                                    "linked": false,
+                                                    "jsValue": "listZip2(grid_row_)",
+                                                    "usedVars": [
+                                                        "grid_row"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "grid_col",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 8,
+                                            "ID": "prod-vsfu7zw4cbg",
+                                            "enabled": true,
+                                            "print": false,
+                                            "meta": {
+                                                "module": "make",
+                                                "name": "Polyline"
+                                            },
+                                            "argCount": 4,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "row_pl",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "row_pl_"
+                                                },
+                                                {
+                                                    "name": "__model__",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "entities",
+                                                    "value": "grid_row",
+                                                    "linked": false,
+                                                    "jsValue": "grid_row_",
+                                                    "usedVars": [
+                                                        "grid_row"
+                                                    ],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "close",
+                                                    "value": "'open'",
+                                                    "jsValue": "'open'",
+                                                    "usedVars": [],
+                                                    "invalidVar": false,
+                                                    "linked": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "row_pl",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 8,
+                                            "ID": "prod-zw5z1zih0ps",
+                                            "enabled": true,
+                                            "print": false,
+                                            "meta": {
+                                                "module": "make",
+                                                "name": "Polyline"
+                                            },
+                                            "argCount": 4,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "col_pl",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "col_pl_"
+                                                },
+                                                {
+                                                    "name": "__model__",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "entities",
+                                                    "value": "grid_col",
+                                                    "linked": false,
+                                                    "jsValue": "grid_col_",
+                                                    "usedVars": [
+                                                        "grid_col"
+                                                    ],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "close",
+                                                    "value": "'open'",
+                                                    "jsValue": "'open'",
+                                                    "usedVars": [],
+                                                    "invalidVar": false,
+                                                    "linked": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "col_pl",
+                                            "selectGeom": false,
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 8,
+                                            "ID": "prod-4qrtt5y5p6j",
+                                            "enabled": true,
+                                            "print": false,
+                                            "meta": {
+                                                "module": "make",
+                                                "name": "Polygon"
+                                            },
+                                            "argCount": 3,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "grid_pg",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "grid_pg_"
+                                                },
+                                                {
+                                                    "name": "__model__",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "entities",
+                                                    "value": "grid_sq",
+                                                    "linked": false,
+                                                    "jsValue": "grid_sq_",
+                                                    "usedVars": [
+                                                        "grid_sq"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "grid_pg",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-lwtweipexkr",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "rand_pg",
+                                                    "invalidVar": false,
+                                                    "jsValue": "rand_pg_",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "randPick(grid_pg, 1)",
+                                                    "linked": false,
+                                                    "jsValue": "randPick(grid_pg_, 1)",
+                                                    "usedVars": [
+                                                        "grid_pg"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "rand_pg",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 14,
+                                            "ID": "prod-drdvs32y03",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 1,
+                                            "args": [
+                                                {
+                                                    "name": "comment",
+                                                    "value": "vertices are unique to objects",
+                                                    "linked": false
+                                                }
+                                            ],
+                                            "selected": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-kvj82f0nrva",
+                                            "enabled": true,
+                                            "print": true,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "rand_pg_v",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "rand_pg_v_"
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "rand_pg#_v",
+                                                    "linked": false,
+                                                    "jsValue": "__modules__.query.Get(__params__.model, '_v', rand_pg_)",
+                                                    "usedVars": [
+                                                        "rand_pg"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "rand_pg_v",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 14,
+                                            "ID": "prod-5fn8j0vbd2f",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 1,
+                                            "args": [
+                                                {
+                                                    "name": "comment",
+                                                    "value": "positions can be shared",
+                                                    "linked": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "selectGeom": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-8hk8fhgxwdo",
+                                            "enabled": true,
+                                            "print": true,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "rand_pg_v_ps",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "rand_pg_v_ps_"
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "rand_pg_v#ps",
+                                                    "linked": false,
+                                                    "jsValue": "__modules__.query.Get(__params__.model, 'ps', rand_pg_v_)",
+                                                    "usedVars": [
+                                                        "rand_pg_v"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "rand_pg_v_ps",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-s4xi8wkjwos",
+                                            "enabled": true,
+                                            "print": true,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "rand_pg_v_ps_pl",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "rand_pg_v_ps_pl_"
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "rand_pg_v_ps#pl",
+                                                    "linked": false,
+                                                    "jsValue": "__modules__.query.Get(__params__.model, 'pl', rand_pg_v_ps_)",
+                                                    "usedVars": [
+                                                        "rand_pg_v_ps"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "rand_pg_v_ps_pl",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 14,
+                                            "ID": "prod-0bj5wsy7z3tu",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 1,
+                                            "args": [
+                                                {
+                                                    "name": "comment",
+                                                    "value": "vertices are unique to object. Vertices of a polygon are unique to polygon",
+                                                    "linked": false
+                                                }
+                                            ],
+                                            "selected": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-n0lr3loeqm",
+                                            "enabled": true,
+                                            "print": true,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "rand_pg_v_pg",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "rand_pg_v_pg_"
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "linked": false,
+                                                    "value": "rand_pg_v#pg",
+                                                    "jsValue": "__modules__.query.Get(__params__.model, 'pg', rand_pg_v_)",
+                                                    "usedVars": [
+                                                        "rand_pg_v"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "rand_pg_v_pg",
+                                            "selectGeom": false,
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-ziv5kgukcqc",
+                                            "enabled": true,
+                                            "print": true,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "rand_pg_v_pl",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "rand_pg_v_pl_"
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "linked": false,
+                                                    "value": "rand_pg_v#pl",
+                                                    "jsValue": "__modules__.query.Get(__params__.model, 'pl', rand_pg_v_)",
+                                                    "usedVars": [
+                                                        "rand_pg_v"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "rand_pg_v_pl",
+                                            "selectGeom": false,
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 14,
+                                            "ID": "prod-o23y01zi5f",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 1,
+                                            "args": [
+                                                {
+                                                    "name": "comment",
+                                                    "value": "objects belong in the same hierarchy. You cannot query for one another on the same level",
+                                                    "linked": false
+                                                }
+                                            ],
+                                            "selected": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-82ddp07db5t",
+                                            "enabled": true,
+                                            "print": true,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "rand_pg_v_ps_pl_pg",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "rand_pg_v_ps_pl_pg_"
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "rand_pg_v_ps_pl#pg",
+                                                    "linked": false,
+                                                    "jsValue": "__modules__.query.Get(__params__.model, 'pg', rand_pg_v_ps_pl_)",
+                                                    "usedVars": [
+                                                        "rand_pg_v_ps_pl"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "rand_pg_v_ps_pl_pg",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-wib3ujk2y0h",
+                                            "enabled": true,
+                                            "print": true,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "rand_pg_v_ps_pl_ps_pg",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "rand_pg_v_ps_pl_ps_pg_"
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "linked": false,
+                                                    "value": "rand_pg_v_ps_pl#ps #pg",
+                                                    "jsValue": "__modules__.query.Get(__params__.model, 'pg',  __modules__.query.Get(__params__.model, 'ps', rand_pg_v_ps_pl_))",
+                                                    "usedVars": [
+                                                        "rand_pg_v_ps_pl"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "rand_pg_v_ps_pl_ps_pg",
+                                            "selectGeom": false,
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 14,
+                                            "ID": "prod-kyj6skdjy4p",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 1,
+                                            "args": [
+                                                {
+                                                    "name": "comment",
+                                                    "value": "again, vertices are unique. Setting rgb values to vertices of polyline have no effect on vertices of polygons",
+                                                    "linked": false
+                                                }
+                                            ],
+                                            "selected": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-og5d85cp7vf",
+                                            "enabled": true,
+                                            "print": true,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "rand_pg_v_ps_pl_ps_pg_v",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "rand_pg_v_ps_pl_ps_pg_v_"
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "rand_pg_v_ps_pl_ps_pg#_v",
+                                                    "linked": false,
+                                                    "jsValue": "__modules__.query.Get(__params__.model, '_v', rand_pg_v_ps_pl_ps_pg_)",
+                                                    "usedVars": [
+                                                        "rand_pg_v_ps_pl_ps_pg"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "rand_pg_v_ps_pl_ps_pg_v",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-ssigvbib9u",
+                                            "enabled": true,
+                                            "print": true,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "rand_pg_v_ps_pl_v",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "rand_pg_v_ps_pl_v_"
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "linked": false,
+                                                    "value": "rand_pg_v_ps_pl#_v",
+                                                    "jsValue": "__modules__.query.Get(__params__.model, '_v', rand_pg_v_ps_pl_)",
+                                                    "usedVars": [
+                                                        "rand_pg_v_ps_pl"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "rand_pg_v_ps_pl_v",
+                                            "selectGeom": false,
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-lhpwfr8ou2",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "rand_pg_v_ps_pl_ps_pg_v@rgb",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "rand_pg_v_ps_pl_ps_pg_v_@rgb",
+                                                    "usedVars": [
+                                                        "rand_pg_v_ps_pl_ps_pg_v"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "[0, 0, 1]",
+                                                    "linked": false,
+                                                    "jsValue": "[0, 0, 1]",
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": null,
+                                            "hasError": false,
+                                            "selectGeom": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-xd6mrq7r7dj",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "rand_pg_v_ps_pl_v@rgb",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "rand_pg_v_ps_pl_v_@rgb",
+                                                    "usedVars": [
+                                                        "rand_pg_v_ps_pl_v"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "[0, 1, 0]",
+                                                    "linked": false,
+                                                    "jsValue": "[0, 1, 0]",
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": null,
+                                            "hasError": false,
+                                            "selectGeom": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-f9chjv3gm47",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "rand_pg_v@rgb",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "rand_pg_v_@rgb",
+                                                    "usedVars": [
+                                                        "rand_pg_v"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "[1, 0, 0]",
+                                                    "linked": false,
+                                                    "jsValue": "[1, 0, 0]",
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": null,
+                                            "hasError": false,
+                                            "selectGeom": false
+                                        }
+                                    ],
+                                    "state": {
+                                        "procedure": []
+                                    },
+                                    "input": "~flowchart~nodes~0~output~edges~0~target",
+                                    "output": {
+                                        "name": "output",
+                                        "type": 1,
+                                        "edges": [
+                                            {
+                                                "source": "~flowchart~nodes~0~output~edges~0~target~parentNode~output",
+                                                "target": {
+                                                    "name": "input",
+                                                    "type": 0,
+                                                    "edges": [
+                                                        "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0"
+                                                    ],
+                                                    "meta": {
+                                                        "mode": 0,
+                                                        "opts": {}
+                                                    },
+                                                    "parentNode": {
+                                                        "name": "End",
+                                                        "id": "node_0ni4u6kqwwmi",
+                                                        "position": {
+                                                            "x": 5340,
+                                                            "y": 5400
+                                                        },
+                                                        "enabled": true,
+                                                        "type": "end",
+                                                        "procedure": [
+                                                            {
+                                                                "type": 13,
+                                                                "ID": "",
+                                                                "meta": {
+                                                                    "name": "",
+                                                                    "module": ""
+                                                                },
+                                                                "argCount": 0,
+                                                                "args": [],
+                                                                "print": false,
+                                                                "enabled": true,
+                                                                "selected": false,
+                                                                "selectGeom": false,
+                                                                "hasError": false
+                                                            },
+                                                            {
+                                                                "type": 11,
+                                                                "ID": "Return",
+                                                                "meta": {
+                                                                    "name": "",
+                                                                    "module": ""
+                                                                },
+                                                                "argCount": 2,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "__model__",
+                                                                        "value": "",
+                                                                        "jsValue": ""
+                                                                    },
+                                                                    {
+                                                                        "name": "value",
+                                                                        "value": "",
+                                                                        "jsValue": ""
+                                                                    }
+                                                                ],
+                                                                "print": false,
+                                                                "enabled": true,
+                                                                "selected": false,
+                                                                "selectGeom": false,
+                                                                "hasError": false
+                                                            }
+                                                        ],
+                                                        "state": {
+                                                            "procedure": []
+                                                        },
+                                                        "input": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target",
+                                                        "output": {
+                                                            "name": "output",
+                                                            "type": 1,
+                                                            "edges": [],
+                                                            "meta": {
+                                                                "mode": 0
+                                                            },
+                                                            "parentNode": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode"
+                                                        },
+                                                        "hasError": false,
+                                                        "hasExecuted": true
+                                                    }
+                                                },
+                                                "selected": false
+                                            }
+                                        ],
+                                        "meta": {
+                                            "mode": 0
+                                        },
+                                        "parentNode": "~flowchart~nodes~0~output~edges~0~target~parentNode"
+                                    },
+                                    "hasError": false,
+                                    "hasExecuted": true
+                                }
+                            },
+                            "selected": false
+                        }
+                    ],
+                    "meta": {
+                        "mode": 0
+                    },
+                    "parentNode": "~flowchart~nodes~0"
+                },
+                "hasError": false,
+                "hasExecuted": true
+            },
+            "~flowchart~nodes~0~output~edges~0~target~parentNode",
+            "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode"
+        ],
+        "edges": [
+            "~flowchart~nodes~0~output~edges~0",
+            "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0"
+        ],
+        "functions": [],
+        "ordered": true,
+        "last_updated": "2019-09-26T21:24:10.810Z"
+    },
+    "settings": "{\"normals\":{\"show\":false,\"size\":5},\"axes\":{\"show\":true,\"size\":50},\"grid\":{\"show\":true,\"size\":500},\"positions\":{\"show\":true,\"size\":0.5},\"tjs_summary\":{\"show\":false},\"gi_summary\":{\"show\":false},\"wireframe\":{\"show\":false},\"camera\":{\"pos\":{\"x\":-80,\"y\":-80,\"z\":80},\"pos_x\":-80,\"pos_y\":-80,\"pos_z\":80,\"target\":{\"x\":0,\"y\":0,\"z\":0}},\"colors\":{\"viewer_bg\":\"#E6E6E6\",\"position\":\"#000000\",\"position_s\":\"#0033FF\",\"vertex_s\":\"#FFCC00\",\"face_f\":\"#FFFFFF\",\"face_f_s\":\"#4949BD\",\"face_b\":\"#DDDDDD\",\"face_b_s\":\"#00006D\"},\"ambient_light\":{\"show\":true,\"color\":\"#FFFFFF\",\"intensity\":0.5},\"hemisphere_light\":{\"show\":true,\"helper\":false,\"skyColor\":\"#FFFFFF\",\"groundColor\":\"#FFFFFF\",\"intensity\":0.5},\"directional_light\":{\"show\":false,\"helper\":false,\"color\":\"#FFFFFF\",\"intensity\":1,\"shadow\":true,\"shadowSize\":4,\"azimuth\":90,\"altitude\":45,\"distance\":10000},\"ground\":{\"show\":false,\"width\":1000,\"length\":1000,\"height\":-0.5,\"color\":\"#FFFFFF\",\"shininess\":0},\"select\":{\"selector\":{\"id\":5,\"name\":\"Faces\"},\"tab\":\"1\"},\"version\":\"0.4.38\"}"
+}
