@@ -1,5 +1,5 @@
 {
-    "name": "Parametric_Chair (2)",
+    "name": "Parametric_Chair_(2)",
     "author": "new_user",
     "flowchart": {
         "id": "11ce08fd-f091-e59e-3adc-32a81c9f41b9",
@@ -14,7 +14,7 @@
         "nodes": [
             {
                 "name": "Start",
-                "id": "node_r9m6g97dsn",
+                "id": "node_3d7mhpovzos",
                 "position": {
                     "x": 5340,
                     "y": 5000
@@ -114,9 +114,10 @@
                         "args": [
                             {
                                 "name": "const_name",
-                                "value": "ang_list",
-                                "jsValue": "ang_list_",
-                                "linked": false
+                                "value": "ang",
+                                "jsValue": "ang_",
+                                "linked": false,
+                                "invalidVar": false
                             },
                             {
                                 "name": "__input__",
@@ -286,7 +287,7 @@
                                 },
                                 "parentNode": {
                                     "name": "Draw Cross Section",
-                                    "id": "node_ngg1n5ajg1",
+                                    "id": "node_nepgs2d7kn9",
                                     "position": {
                                         "x": 5340,
                                         "y": 5200
@@ -311,28 +312,57 @@
                                         },
                                         {
                                             "type": 0,
-                                            "ID": "prod-wm0fcldfu7q",
+                                            "ID": "prod-v6viapo5nie",
                                             "enabled": true,
                                             "print": false,
                                             "argCount": 2,
                                             "args": [
                                                 {
                                                     "name": "var_name",
-                                                    "value": "ang_list[2]",
+                                                    "value": "ang_list_cpy",
                                                     "invalidVar": false,
-                                                    "jsValue": "ang_list_[pythonList(2, ang_list_.length)]",
+                                                    "jsValue": "ang_list_cpy_",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "listCopy(ang)",
+                                                    "linked": false,
+                                                    "jsValue": "listCopy(ang_)",
+                                                    "invalidVar": false,
                                                     "usedVars": [
-                                                        "ang_list"
+                                                        "ang"
+                                                    ]
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "ang_list_cpy",
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-wm0fcldfu7q",
+                                            "enabled": true,
+                                            "print": true,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "ang_list_cpy[2]",
+                                                    "invalidVar": false,
+                                                    "jsValue": "ang_list_cpy_[pythonList(2, ang_list_cpy_.length)]",
+                                                    "usedVars": [
+                                                        "ang_list_cpy"
                                                     ],
                                                     "linked": false
                                                 },
                                                 {
                                                     "name": "value",
-                                                    "value": "sum(ang_list) - 360",
+                                                    "value": "ang_list_cpy[2] - 180",
                                                     "linked": false,
-                                                    "jsValue": "sum(ang_list_) - 360",
+                                                    "jsValue": "ang_list_cpy_[pythonList(2, ang_list_cpy_.length)] - 180",
                                                     "usedVars": [
-                                                        "ang_list"
+                                                        "ang_list_cpy"
                                                     ],
                                                     "invalidVar": false
                                                 }
@@ -346,26 +376,26 @@
                                             "type": 0,
                                             "ID": "prod-unfid9jmxlc",
                                             "enabled": true,
-                                            "print": false,
+                                            "print": true,
                                             "argCount": 2,
                                             "args": [
                                                 {
                                                     "name": "var_name",
-                                                    "value": "ang_list[1]",
+                                                    "value": "ang_list_cpy[1]",
                                                     "invalidVar": false,
-                                                    "jsValue": "ang_list_[pythonList(1, ang_list_.length)]",
+                                                    "jsValue": "ang_list_cpy_[pythonList(1, ang_list_cpy_.length)]",
                                                     "usedVars": [
-                                                        "ang_list"
+                                                        "ang_list_cpy"
                                                     ],
                                                     "linked": false
                                                 },
                                                 {
                                                     "name": "value",
-                                                    "value": "180 + ang_list[0] + ang_list[1]",
+                                                    "value": "180 + ang_list_cpy[0] + ang_list_cpy[1]",
                                                     "linked": false,
-                                                    "jsValue": "180 + ang_list_[pythonList(0, ang_list_.length)] + ang_list_[pythonList(1, ang_list_.length)]",
+                                                    "jsValue": "180 + ang_list_cpy_[pythonList(0, ang_list_cpy_.length)] + ang_list_cpy_[pythonList(1, ang_list_cpy_.length)]",
                                                     "usedVars": [
-                                                        "ang_list"
+                                                        "ang_list_cpy"
                                                     ],
                                                     "invalidVar": false
                                                 }
@@ -432,7 +462,7 @@
                                                 {
                                                     "type": 13,
                                                     "ID": "",
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~4",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~5",
                                                     "meta": {
                                                         "name": "",
                                                         "module": ""
@@ -447,7 +477,7 @@
                                                 },
                                                 {
                                                     "type": 0,
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~4",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~5",
                                                     "ID": "prod-6skdood27hn",
                                                     "enabled": true,
                                                     "print": false,
@@ -478,7 +508,7 @@
                                                 },
                                                 {
                                                     "type": 1,
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~4",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~5",
                                                     "ID": "prod-mz2iwhkb1u",
                                                     "enabled": true,
                                                     "print": false,
@@ -499,7 +529,7 @@
                                                         {
                                                             "type": 13,
                                                             "ID": "",
-                                                            "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~4~children~2",
+                                                            "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~5~children~2",
                                                             "meta": {
                                                                 "name": "",
                                                                 "module": ""
@@ -545,7 +575,7 @@
                                                             "variable": null,
                                                             "hasError": false,
                                                             "selectGeom": false,
-                                                            "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~4~children~2"
+                                                            "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~5~children~2"
                                                         }
                                                     ],
                                                     "selected": false,
@@ -553,7 +583,7 @@
                                                 },
                                                 {
                                                     "type": 3,
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~4",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~5",
                                                     "ID": "prod-3yxtkhw8hco",
                                                     "enabled": true,
                                                     "print": false,
@@ -563,7 +593,7 @@
                                                         {
                                                             "type": 13,
                                                             "ID": "",
-                                                            "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~4~children~3",
+                                                            "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~5~children~3",
                                                             "meta": {
                                                                 "name": "",
                                                                 "module": ""
@@ -595,14 +625,14 @@
                                                                 },
                                                                 {
                                                                     "name": "value",
-                                                                    "value": "coord[0] + dim_list[vec_i] * cos(degToRad(ang_list[vec_i - 1]))",
+                                                                    "value": "coord[0] + dim_list[vec_i] * cos(degToRad(ang_list_cpy[vec_i - 1]))",
                                                                     "linked": false,
-                                                                    "jsValue": "coord_[pythonList(0, coord_.length)] + dim_list_[pythonList(vec_i_, dim_list_.length)] * cos(degToRad(ang_list_[pythonList(vec_i_ - 1, ang_list_.length)]))",
+                                                                    "jsValue": "coord_[pythonList(0, coord_.length)] + dim_list_[pythonList(vec_i_, dim_list_.length)] * cos(degToRad(ang_list_cpy_[pythonList(vec_i_ - 1, ang_list_cpy_.length)]))",
                                                                     "invalidVar": false,
                                                                     "usedVars": [
-                                                                        "ang_list",
                                                                         "dim_list",
                                                                         "coord",
+                                                                        "ang_list_cpy",
                                                                         "vec_i"
                                                                     ]
                                                                 }
@@ -611,7 +641,7 @@
                                                             "variable": null,
                                                             "hasError": false,
                                                             "selectGeom": false,
-                                                            "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~4~children~3"
+                                                            "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~5~children~3"
                                                         },
                                                         {
                                                             "type": 0,
@@ -632,13 +662,13 @@
                                                                 },
                                                                 {
                                                                     "name": "value",
-                                                                    "value": "coord[2] + dim_list[vec_i] * sin(degToRad(ang_list[vec_i - 1]))",
+                                                                    "value": "coord[2] + dim_list[vec_i] * sin(degToRad(ang_list_cpy[vec_i - 1]))",
                                                                     "linked": false,
-                                                                    "jsValue": "coord_[pythonList(2, coord_.length)] + dim_list_[pythonList(vec_i_, dim_list_.length)] * sin(degToRad(ang_list_[pythonList(vec_i_ - 1, ang_list_.length)]))",
+                                                                    "jsValue": "coord_[pythonList(2, coord_.length)] + dim_list_[pythonList(vec_i_, dim_list_.length)] * sin(degToRad(ang_list_cpy_[pythonList(vec_i_ - 1, ang_list_cpy_.length)]))",
                                                                     "usedVars": [
-                                                                        "ang_list",
                                                                         "dim_list",
                                                                         "coord",
+                                                                        "ang_list_cpy",
                                                                         "vec_i"
                                                                     ],
                                                                     "invalidVar": false
@@ -648,7 +678,7 @@
                                                             "variable": null,
                                                             "hasError": false,
                                                             "selectGeom": false,
-                                                            "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~4~children~3"
+                                                            "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~5~children~3"
                                                         }
                                                     ],
                                                     "selected": false,
@@ -656,7 +686,7 @@
                                                 },
                                                 {
                                                     "type": 0,
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~4",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~5",
                                                     "ID": "prod-smc1c5hu15",
                                                     "enabled": true,
                                                     "print": false,
@@ -691,7 +721,7 @@
                                                 },
                                                 {
                                                     "type": 8,
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~4",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~5",
                                                     "ID": "prod-gg5ok87tfd8",
                                                     "enabled": true,
                                                     "print": false,
@@ -828,7 +858,7 @@
                                                 {
                                                     "type": 13,
                                                     "ID": "",
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~7",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~8",
                                                     "meta": {
                                                         "name": "",
                                                         "module": ""
@@ -886,7 +916,7 @@
                                                     "variable": "x_sec_pline",
                                                     "hasError": false,
                                                     "selectGeom": false,
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~7"
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~8"
                                                 }
                                             ],
                                             "selected": false,
@@ -903,7 +933,7 @@
                                                 {
                                                     "type": 13,
                                                     "ID": "",
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~8",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~9",
                                                     "meta": {
                                                         "name": "",
                                                         "module": ""
@@ -961,7 +991,7 @@
                                                     "variable": "x_sec_pline",
                                                     "hasError": false,
                                                     "selectGeom": false,
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~8"
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~9"
                                                 }
                                             ],
                                             "hasError": false,
@@ -1182,7 +1212,7 @@
                                                 {
                                                     "type": 13,
                                                     "ID": "prod-at2ypgnczmo",
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~13",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~14",
                                                     "meta": {
                                                         "name": "",
                                                         "module": ""
@@ -1197,7 +1227,7 @@
                                                 },
                                                 {
                                                     "type": 8,
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~13",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~14",
                                                     "ID": "prod-591oy7qrgxx",
                                                     "enabled": true,
                                                     "print": false,
@@ -1243,7 +1273,7 @@
                                                 },
                                                 {
                                                     "type": 8,
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~13",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~14",
                                                     "ID": "prod-sd9k1374nrl",
                                                     "enabled": true,
                                                     "print": false,
@@ -1290,7 +1320,7 @@
                                                 },
                                                 {
                                                     "type": 8,
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~13",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~14",
                                                     "ID": "prod-z8q4d343ilh",
                                                     "enabled": true,
                                                     "print": false,
@@ -1329,7 +1359,7 @@
                                                 },
                                                 {
                                                     "type": 8,
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~13",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~14",
                                                     "ID": "prod-lybpt50ouu8",
                                                     "enabled": true,
                                                     "print": false,
@@ -1391,7 +1421,7 @@
                                                     "variable": null,
                                                     "hasError": false,
                                                     "selectGeom": false,
-                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~13"
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~14"
                                                 }
                                             ],
                                             "selected": false,
@@ -1632,7 +1662,7 @@
                                                     },
                                                     "parentNode": {
                                                         "name": "End",
-                                                        "id": "node_eioh7s6m37m",
+                                                        "id": "node_t6jb3i1r81n",
                                                         "position": {
                                                             "x": 5340,
                                                             "y": 5400
@@ -4027,9 +4057,9 @@
             }
         ],
         "ordered": true,
-        "last_updated": "2019-09-13T08:06:13.470Z",
+        "last_updated": "2019-09-27T08:39:46.843Z",
         "subFunctions": []
     },
     "version": 1,
-    "settings": "{\"normals\":{\"show\":false,\"size\":5},\"axes\":{\"show\":true,\"size\":50},\"grid\":{\"show\":true,\"size\":500},\"positions\":{\"show\":false,\"size\":0.5},\"tjs_summary\":{\"show\":false},\"gi_summary\":{\"show\":false},\"wireframe\":{\"show\":false},\"camera\":{\"pos\":{\"x\":-15.108898322706397,\"y\":-20.787777704018335,\"z\":16.28586802514625},\"pos_x\":-15.108898322706397,\"pos_y\":-20.787777704018335,\"pos_z\":16.28586802514625,\"target\":{\"x\":-26.345299243927002,\"y\":45,\"z\":0}},\"colors\":{\"viewer_bg\":\"#E6E6E6\",\"position\":\"#000000\",\"position_s\":\"#0033FF\",\"vertex_s\":\"#FFCC00\",\"face_f\":\"#FFFFFF\",\"face_f_s\":\"#4949BD\",\"face_b\":\"#000000\",\"face_b_s\":\"#00006D\"},\"ambient_light\":{\"show\":true,\"color\":\"#FFFFFF\",\"intensity\":0.5},\"hemisphere_light\":{\"show\":true,\"helper\":false,\"skyColor\":\"#FFFFFF\",\"groundColor\":\"#FFFFFF\",\"intensity\":0.5},\"directional_light\":{\"show\":false,\"helper\":false,\"color\":\"#FFFFFF\",\"intensity\":1,\"shadow\":true,\"shadowSize\":4,\"azimuth\":90,\"altitude\":45,\"distance\":10000},\"ground\":{\"show\":false,\"width\":1000,\"length\":1000,\"height\":-0.5,\"color\":\"#FFFFFF\",\"shininess\":0},\"select\":{\"selector\":{\"id\":0,\"name\":\"Positions\"},\"tab\":\"0\"},\"version\":\"0.4.38\"}"
+    "settings": "{\"normals\":{\"show\":false,\"size\":5},\"axes\":{\"show\":true,\"size\":50},\"grid\":{\"show\":true,\"size\":500},\"positions\":{\"show\":true,\"size\":0.5},\"tjs_summary\":{\"show\":false},\"gi_summary\":{\"show\":false},\"wireframe\":{\"show\":false},\"camera\":{\"pos\":{\"x\":-80,\"y\":-80,\"z\":80},\"pos_x\":-80,\"pos_y\":-80,\"pos_z\":80,\"target\":{\"x\":0,\"y\":0,\"z\":0}},\"colors\":{\"viewer_bg\":\"#E6E6E6\",\"position\":\"#000000\",\"position_s\":\"#0033FF\",\"vertex_s\":\"#FFCC00\",\"face_f\":\"#FFFFFF\",\"face_f_s\":\"#4949BD\",\"face_b\":\"#DDDDDD\",\"face_b_s\":\"#00006D\"},\"ambient_light\":{\"show\":true,\"color\":\"#FFFFFF\",\"intensity\":0.5},\"hemisphere_light\":{\"show\":true,\"helper\":false,\"skyColor\":\"#FFFFFF\",\"groundColor\":\"#FFFFFF\",\"intensity\":0.5},\"directional_light\":{\"show\":false,\"helper\":false,\"color\":\"#FFFFFF\",\"intensity\":1,\"shadow\":true,\"shadowSize\":4,\"azimuth\":90,\"altitude\":45,\"distance\":10000},\"ground\":{\"show\":false,\"width\":1000,\"length\":1000,\"height\":-0.5,\"color\":\"#FFFFFF\",\"shininess\":0},\"select\":{\"selector\":{\"id\":5,\"name\":\"Faces\"},\"tab\":\"0\"},\"version\":\"0.5.1\"}"
 }
