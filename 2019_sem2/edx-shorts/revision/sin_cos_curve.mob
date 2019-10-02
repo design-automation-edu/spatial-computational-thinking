@@ -1,5 +1,5 @@
 {
-    "name": "sin_cos_curve (1)",
+    "name": "sin_cos_curve",
     "author": "new_user",
     "flowchart": {
         "id": "5b78f51b-d33e-8045-a67f-1b2a37ba20e0",
@@ -14,7 +14,7 @@
         "nodes": [
             {
                 "name": "Start",
-                "id": "node_zr30ob1zanc",
+                "id": "node_cfv1feedmgk",
                 "position": {
                     "x": 5340,
                     "y": 5000
@@ -59,7 +59,7 @@
                             },
                             {
                                 "name": "__input__",
-                                "value": "\"cos\"",
+                                "value": "\"sin\"",
                                 "linked": false,
                                 "max": "[\"sin\",\"cos\"]",
                                 "min": [
@@ -190,7 +190,7 @@
                             },
                             {
                                 "name": "__input__",
-                                "value": "0.375",
+                                "value": "2",
                                 "linked": false,
                                 "min": "0",
                                 "step": "0.001",
@@ -296,7 +296,7 @@
                                 },
                                 "parentNode": {
                                     "name": "Node",
-                                    "id": "node_ecpuau7pn7o",
+                                    "id": "node_1mqvnfuig71",
                                     "position": {
                                         "x": 5340,
                                         "y": 5200
@@ -706,7 +706,7 @@
                                                     },
                                                     "parentNode": {
                                                         "name": "End",
-                                                        "id": "node_4tsozmr3rk",
+                                                        "id": "node_6iyojtq7y9w",
                                                         "position": {
                                                             "x": 5340,
                                                             "y": 5400
@@ -919,8 +919,8 @@
         ],
         "functions": [],
         "ordered": true,
-        "last_updated": "2019-10-02T04:44:19.385Z"
+        "last_updated": "2019-10-02T05:05:17.876Z"
     },
     "version": 1,
-    "settings": "{\"normals\":{\"show\":false,\"size\":5},\"axes\":{\"show\":true,\"size\":50},\"grid\":{\"show\":true,\"size\":500},\"positions\":{\"show\":true,\"size\":0.5},\"tjs_summary\":{\"show\":false},\"gi_summary\":{\"show\":false},\"wireframe\":{\"show\":false},\"camera\":{\"pos\":{\"x\":-80,\"y\":-80,\"z\":80},\"pos_x\":-80,\"pos_y\":-80,\"pos_z\":80,\"target\":{\"x\":0,\"y\":0,\"z\":0}},\"colors\":{\"viewer_bg\":\"#E6E6E6\",\"position\":\"#000000\",\"position_s\":\"#0033FF\",\"vertex_s\":\"#FFCC00\",\"face_f\":\"#FFFFFF\",\"face_f_s\":\"#4949BD\",\"face_b\":\"#DDDDDD\",\"face_b_s\":\"#00006D\"},\"ambient_light\":{\"show\":true,\"color\":\"#FFFFFF\",\"intensity\":0.5},\"hemisphere_light\":{\"show\":true,\"helper\":false,\"skyColor\":\"#FFFFFF\",\"groundColor\":\"#FFFFFF\",\"intensity\":0.5},\"directional_light\":{\"show\":false,\"helper\":false,\"color\":\"#FFFFFF\",\"intensity\":1,\"shadow\":true,\"shadowSize\":4,\"azimuth\":90,\"altitude\":45,\"distance\":10000},\"ground\":{\"show\":false,\"width\":1000,\"length\":1000,\"height\":-0.5,\"color\":\"#FFFFFF\",\"shininess\":0},\"select\":{\"selector\":{\"id\":3,\"name\":\"Edges\"},\"tab\":\"0\"},\"version\":\"0.5.1\"}"
+    "settings": "{\"normals\":{\"show\":false,\"size\":5},\"axes\":{\"show\":true,\"size\":50},\"grid\":{\"show\":true,\"size\":500},\"positions\":{\"show\":true,\"size\":0.5},\"tjs_summary\":{\"show\":false},\"gi_summary\":{\"show\":false},\"wireframe\":{\"show\":false},\"camera\":{\"pos\":{\"x\":-80,\"y\":-80,\"z\":80},\"pos_x\":-80,\"pos_y\":-80,\"pos_z\":80,\"target\":{\"x\":0,\"y\":0,\"z\":0}},\"colors\":{\"viewer_bg\":\"#E6E6E6\",\"position\":\"#000000\",\"position_s\":\"#0033FF\",\"vertex_s\":\"#FFCC00\",\"face_f\":\"#FFFFFF\",\"face_f_s\":\"#4949BD\",\"face_b\":\"#DDDDDD\",\"face_b_s\":\"#00006D\"},\"ambient_light\":{\"show\":true,\"color\":\"#FFFFFF\",\"intensity\":0.5},\"hemisphere_light\":{\"show\":true,\"helper\":false,\"skyColor\":\"#FFFFFF\",\"groundColor\":\"#FFFFFF\",\"intensity\":0.5},\"directional_light\":{\"show\":false,\"helper\":false,\"color\":\"#FFFFFF\",\"intensity\":1,\"shadow\":true,\"shadowSize\":4,\"azimuth\":90,\"altitude\":45,\"distance\":10000},\"ground\":{\"show\":false,\"width\":1000,\"length\":1000,\"height\":-0.5,\"color\":\"#FFFFFF\",\"shininess\":0},\"select\":{\"selector\":{\"id\":3,\"name\":\"Edges\"},\"tab\":\"2\"},\"version\":\"0.5.1\"}"
 }
