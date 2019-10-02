@@ -1,0 +1,2037 @@
+{
+    "name": "vectors and graphs",
+    "author": "new_user",
+    "flowchart": {
+        "id": "747650f5-2da7-b60f-511c-a7320bb3ec63",
+        "name": "vectors and graphs",
+        "description": "",
+        "language": "js",
+        "meta": {
+            "selected_nodes": [
+                0
+            ]
+        },
+        "nodes": [
+            {
+                "name": "Start",
+                "id": "node_d952mdi60mc",
+                "position": {
+                    "x": 5340,
+                    "y": 5000
+                },
+                "enabled": true,
+                "type": "start",
+                "procedure": [
+                    {
+                        "type": 13,
+                        "ID": "",
+                        "meta": {
+                            "name": "",
+                            "module": ""
+                        },
+                        "argCount": 0,
+                        "args": [],
+                        "print": false,
+                        "enabled": true,
+                        "selected": false,
+                        "selectGeom": false,
+                        "hasError": false
+                    },
+                    {
+                        "type": 10,
+                        "ID": "prod-vzc1jsp3twg",
+                        "enabled": true,
+                        "print": false,
+                        "argCount": 2,
+                        "meta": {
+                            "module": "Input",
+                            "name": "Constant",
+                            "inputMode": 1,
+                            "description": "Radius"
+                        },
+                        "args": [
+                            {
+                                "name": "const_name",
+                                "value": "rad",
+                                "invalidVar": false,
+                                "jsValue": "rad_",
+                                "linked": false
+                            },
+                            {
+                                "name": "__input__",
+                                "value": 31,
+                                "step": "1",
+                                "min": "20",
+                                "max": "100",
+                                "linked": false
+                            }
+                        ],
+                        "selected": false,
+                        "hasError": false
+                    },
+                    {
+                        "type": 10,
+                        "ID": "prod-mym2rm13pmp",
+                        "enabled": true,
+                        "print": false,
+                        "argCount": 2,
+                        "meta": {
+                            "module": "Input",
+                            "name": "Constant",
+                            "inputMode": 1,
+                            "description": "period_n for secondary circle graph\n\nResolution of graph == f * 4"
+                        },
+                        "args": [
+                            {
+                                "name": "const_name",
+                                "value": "f",
+                                "jsValue": "f_",
+                                "linked": false,
+                                "invalidVar": false
+                            },
+                            {
+                                "name": "__input__",
+                                "value": 12,
+                                "linked": false,
+                                "min": "1",
+                                "max": "100",
+                                "step": "1"
+                            }
+                        ],
+                        "selected": false,
+                        "hasError": false
+                    },
+                    {
+                        "type": 10,
+                        "ID": "prod-dtmbfad7dmf",
+                        "enabled": true,
+                        "print": false,
+                        "argCount": 2,
+                        "meta": {
+                            "module": "Input",
+                            "name": "Constant",
+                            "inputMode": 1,
+                            "description": "position index to review component vectors (rendered as polyline)\nsecondary vector is highlighted "
+                        },
+                        "args": [
+                            {
+                                "name": "const_name",
+                                "value": "ps_i",
+                                "jsValue": "ps_i_",
+                                "linked": false,
+                                "invalidVar": false
+                            },
+                            {
+                                "name": "__input__",
+                                "value": 7,
+                                "linked": false,
+                                "min": "0",
+                                "max": "25",
+                                "step": "1"
+                            }
+                        ],
+                        "selected": false,
+                        "hasError": false,
+                        "selectGeom": false
+                    }
+                ],
+                "state": {
+                    "procedure": []
+                },
+                "input": {
+                    "name": "input",
+                    "type": 0,
+                    "edges": [],
+                    "meta": {
+                        "mode": 0,
+                        "opts": {}
+                    },
+                    "parentNode": "~flowchart~nodes~0"
+                },
+                "output": {
+                    "name": "output",
+                    "type": 1,
+                    "edges": [
+                        {
+                            "source": "~flowchart~nodes~0~output",
+                            "target": {
+                                "name": "input",
+                                "type": 0,
+                                "edges": [
+                                    "~flowchart~nodes~0~output~edges~0"
+                                ],
+                                "meta": {
+                                    "mode": 0,
+                                    "opts": {}
+                                },
+                                "parentNode": {
+                                    "name": "Node",
+                                    "id": "node_4nb10xb9yi9",
+                                    "position": {
+                                        "x": 5340,
+                                        "y": 5200
+                                    },
+                                    "enabled": true,
+                                    "type": "",
+                                    "procedure": [
+                                        {
+                                            "type": 13,
+                                            "ID": "",
+                                            "meta": {
+                                                "name": "",
+                                                "module": ""
+                                            },
+                                            "argCount": 0,
+                                            "args": [],
+                                            "print": false,
+                                            "enabled": true,
+                                            "selected": false,
+                                            "selectGeom": false,
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-gzjitm88gme",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "res",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "res_"
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "f * 4",
+                                                    "linked": false,
+                                                    "jsValue": "f_ * 4",
+                                                    "usedVars": [
+                                                        "f"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "res",
+                                            "hasError": false,
+                                            "selectGeom": false
+                                        },
+                                        {
+                                            "type": 4,
+                                            "ID": "prod-strjv0k5hb",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "item",
+                                                    "value": "i",
+                                                    "invalidVar": false,
+                                                    "jsValue": "i_",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "list",
+                                                    "value": "range(0, res + 1)",
+                                                    "linked": false,
+                                                    "jsValue": "range(0, res_ + 1)",
+                                                    "usedVars": [
+                                                        "res"
+                                                    ],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "children": [
+                                                {
+                                                    "type": 13,
+                                                    "ID": "prod-i2vpu4x1yni",
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2",
+                                                    "meta": {
+                                                        "name": "",
+                                                        "module": ""
+                                                    },
+                                                    "argCount": 0,
+                                                    "args": [],
+                                                    "print": false,
+                                                    "enabled": true,
+                                                    "selected": false,
+                                                    "selectGeom": false,
+                                                    "hasError": false
+                                                },
+                                                {
+                                                    "type": 0,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2",
+                                                    "ID": "prod-yerx5lrxz6r",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "argCount": 2,
+                                                    "args": [
+                                                        {
+                                                            "name": "var_name",
+                                                            "value": "x",
+                                                            "invalidVar": false,
+                                                            "jsValue": "x_",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "value",
+                                                            "value": "cos(2 * PI / res * i) * rad",
+                                                            "linked": false,
+                                                            "jsValue": "cos(2 * PI / res_ * i_) * rad_",
+                                                            "usedVars": [
+                                                                "rad",
+                                                                "res",
+                                                                "i"
+                                                            ],
+                                                            "invalidVar": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "variable": "x",
+                                                    "hasError": false,
+                                                    "selectGeom": false
+                                                },
+                                                {
+                                                    "type": 0,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2",
+                                                    "ID": "prod-0z6rxb7at03r",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "argCount": 2,
+                                                    "args": [
+                                                        {
+                                                            "name": "var_name",
+                                                            "value": "y",
+                                                            "invalidVar": false,
+                                                            "jsValue": "y_",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "value",
+                                                            "value": "sin(2 * PI / res * i) * rad",
+                                                            "linked": false,
+                                                            "jsValue": "sin(2 * PI / res_ * i_) * rad_",
+                                                            "usedVars": [
+                                                                "rad",
+                                                                "res",
+                                                                "i"
+                                                            ],
+                                                            "invalidVar": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "variable": "y",
+                                                    "selectGeom": false,
+                                                    "hasError": false
+                                                },
+                                                {
+                                                    "type": 0,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2",
+                                                    "ID": "prod-acf4x9wco3c",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "argCount": 2,
+                                                    "args": [
+                                                        {
+                                                            "name": "var_name",
+                                                            "value": "coord1",
+                                                            "invalidVar": false,
+                                                            "jsValue": "coord1_",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "value",
+                                                            "value": "[x, y, 0]",
+                                                            "linked": false,
+                                                            "jsValue": "[x_, y_, 0]",
+                                                            "usedVars": [
+                                                                "x",
+                                                                "y"
+                                                            ],
+                                                            "invalidVar": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "variable": "coord1",
+                                                    "hasError": false,
+                                                    "selectGeom": false
+                                                },
+                                                {
+                                                    "type": 8,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2",
+                                                    "ID": "prod-8fp6em3zlzg",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "meta": {
+                                                        "module": "make",
+                                                        "name": "Position"
+                                                    },
+                                                    "argCount": 3,
+                                                    "args": [
+                                                        {
+                                                            "name": "var_name",
+                                                            "value": "pos1",
+                                                            "linked": false,
+                                                            "invalidVar": false,
+                                                            "jsValue": "pos1_"
+                                                        },
+                                                        {
+                                                            "name": "__model__",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "coords",
+                                                            "value": "coord1",
+                                                            "jsValue": "coord1_",
+                                                            "usedVars": [
+                                                                "coord1"
+                                                            ],
+                                                            "invalidVar": false,
+                                                            "linked": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "variable": "pos1",
+                                                    "hasError": false,
+                                                    "selectGeom": false
+                                                },
+                                                {
+                                                    "type": 0,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2",
+                                                    "ID": "prod-3nylrw9z2yk",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "argCount": 2,
+                                                    "args": [
+                                                        {
+                                                            "name": "var_name",
+                                                            "value": "pos1@name",
+                                                            "linked": false,
+                                                            "invalidVar": false,
+                                                            "jsValue": "pos1_@name",
+                                                            "usedVars": [
+                                                                "pos1"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "value",
+                                                            "value": "\"pos1\"",
+                                                            "linked": false,
+                                                            "jsValue": "\"pos1\"",
+                                                            "usedVars": [],
+                                                            "invalidVar": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "variable": null,
+                                                    "selectGeom": false,
+                                                    "hasError": false
+                                                },
+                                                {
+                                                    "type": 0,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2",
+                                                    "ID": "prod-68csf9gby0w",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "argCount": 2,
+                                                    "args": [
+                                                        {
+                                                            "name": "var_name",
+                                                            "value": "x2",
+                                                            "invalidVar": false,
+                                                            "jsValue": "x2_",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "value",
+                                                            "value": "cos(f * 2 * PI / res * i) * rad / f",
+                                                            "linked": false,
+                                                            "jsValue": "cos(f_ * 2 * PI / res_ * i_) * rad_ / f_",
+                                                            "usedVars": [
+                                                                "f",
+                                                                "rad",
+                                                                "res",
+                                                                "i"
+                                                            ],
+                                                            "invalidVar": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "variable": "x2",
+                                                    "hasError": false,
+                                                    "selectGeom": false
+                                                },
+                                                {
+                                                    "type": 0,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2",
+                                                    "ID": "prod-el8hjxgttgm",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "argCount": 2,
+                                                    "args": [
+                                                        {
+                                                            "name": "var_name",
+                                                            "value": "y2",
+                                                            "invalidVar": false,
+                                                            "jsValue": "y2_",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "value",
+                                                            "value": "sin(f * 2 * PI / res * i) * rad / f",
+                                                            "linked": false,
+                                                            "jsValue": "sin(f_ * 2 * PI / res_ * i_) * rad_ / f_",
+                                                            "usedVars": [
+                                                                "f",
+                                                                "rad",
+                                                                "res",
+                                                                "i"
+                                                            ],
+                                                            "invalidVar": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "variable": "y2",
+                                                    "selectGeom": false,
+                                                    "hasError": false
+                                                },
+                                                {
+                                                    "type": 0,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2",
+                                                    "ID": "prod-c2capo9cudw",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "argCount": 2,
+                                                    "args": [
+                                                        {
+                                                            "name": "var_name",
+                                                            "value": "coord2",
+                                                            "invalidVar": false,
+                                                            "jsValue": "coord2_",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "value",
+                                                            "value": "[x + x2, y + y2, 0]",
+                                                            "linked": false,
+                                                            "jsValue": "[x_ + x2_, y_ + y2_, 0]",
+                                                            "usedVars": [
+                                                                "x",
+                                                                "y",
+                                                                "x2",
+                                                                "y2"
+                                                            ],
+                                                            "invalidVar": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "variable": "coord2",
+                                                    "selectGeom": false,
+                                                    "hasError": false
+                                                },
+                                                {
+                                                    "type": 8,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2",
+                                                    "ID": "prod-gbkicaogn45",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "meta": {
+                                                        "module": "make",
+                                                        "name": "Position"
+                                                    },
+                                                    "argCount": 3,
+                                                    "args": [
+                                                        {
+                                                            "name": "var_name",
+                                                            "value": "pos2",
+                                                            "linked": false,
+                                                            "invalidVar": false,
+                                                            "jsValue": "pos2_"
+                                                        },
+                                                        {
+                                                            "name": "__model__",
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "coords",
+                                                            "value": "coord2",
+                                                            "jsValue": "coord2_",
+                                                            "usedVars": [
+                                                                "coord2"
+                                                            ],
+                                                            "invalidVar": false,
+                                                            "linked": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "variable": "pos2",
+                                                    "hasError": false,
+                                                    "selectGeom": false
+                                                },
+                                                {
+                                                    "type": 0,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2",
+                                                    "ID": "prod-gokmwraj9tg",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "argCount": 2,
+                                                    "args": [
+                                                        {
+                                                            "name": "var_name",
+                                                            "value": "pos2@name",
+                                                            "linked": false,
+                                                            "invalidVar": false,
+                                                            "jsValue": "pos2_@name",
+                                                            "usedVars": [
+                                                                "pos2"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "value",
+                                                            "value": "\"pos2\"",
+                                                            "linked": false,
+                                                            "jsValue": "\"pos2\"",
+                                                            "usedVars": [],
+                                                            "invalidVar": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "variable": null,
+                                                    "hasError": false
+                                                },
+                                                {
+                                                    "type": 0,
+                                                    "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2",
+                                                    "ID": "prod-oxg9qlraspe",
+                                                    "enabled": true,
+                                                    "print": false,
+                                                    "argCount": 2,
+                                                    "args": [
+                                                        {
+                                                            "name": "var_name",
+                                                            "value": "pos2@pos1",
+                                                            "invalidVar": false,
+                                                            "jsValue": "pos2_@pos1",
+                                                            "usedVars": [
+                                                                "pos2"
+                                                            ],
+                                                            "linked": false
+                                                        },
+                                                        {
+                                                            "name": "value",
+                                                            "value": "pos1",
+                                                            "linked": false,
+                                                            "jsValue": "pos1_",
+                                                            "usedVars": [
+                                                                "pos1"
+                                                            ],
+                                                            "invalidVar": false
+                                                        }
+                                                    ],
+                                                    "selected": false,
+                                                    "variable": null,
+                                                    "hasError": false
+                                                }
+                                            ],
+                                            "variable": "i",
+                                            "selected": false,
+                                            "hasError": false,
+                                            "selectGeom": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-gp8smlhc8rs",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "pos2",
+                                                    "invalidVar": false,
+                                                    "jsValue": "pos2_",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "#ps ?@name==\"pos2\"",
+                                                    "linked": false,
+                                                    "jsValue": "__modules__.query.Filter(__params__.model,  __modules__.query.Get(__params__.model, 'ps', null), 'name', null, '==', \"pos2\")",
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "pos2",
+                                            "hasError": false,
+                                            "selectGeom": false
+                                        },
+                                        {
+                                            "type": 8,
+                                            "ID": "prod-uab9ll08cdq",
+                                            "enabled": true,
+                                            "print": false,
+                                            "meta": {
+                                                "module": "make",
+                                                "name": "Polyline"
+                                            },
+                                            "argCount": 4,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "pline",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "pline_"
+                                                },
+                                                {
+                                                    "name": "__model__",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "entities",
+                                                    "value": "pos2",
+                                                    "linked": false,
+                                                    "jsValue": "pos2_",
+                                                    "usedVars": [
+                                                        "pos2"
+                                                    ],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "close",
+                                                    "value": "'open'",
+                                                    "jsValue": "'open'",
+                                                    "linked": false,
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "pline",
+                                            "hasError": false,
+                                            "selectGeom": false
+                                        },
+                                        {
+                                            "type": 0,
+                                            "ID": "prod-lzrczkwfta",
+                                            "enabled": true,
+                                            "print": false,
+                                            "argCount": 2,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "pos1",
+                                                    "invalidVar": false,
+                                                    "jsValue": "pos1_",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "value": "#ps ?@name==\"pos1\"",
+                                                    "linked": false,
+                                                    "jsValue": "__modules__.query.Filter(__params__.model,  __modules__.query.Get(__params__.model, 'ps', null), 'name', null, '==', \"pos1\")",
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "pos1",
+                                            "hasError": false,
+                                            "selectGeom": false
+                                        },
+                                        {
+                                            "type": 8,
+                                            "ID": "prod-rvjin0jlxzh",
+                                            "enabled": true,
+                                            "print": false,
+                                            "meta": {
+                                                "module": "make",
+                                                "name": "Polyline"
+                                            },
+                                            "argCount": 4,
+                                            "args": [
+                                                {
+                                                    "name": "var_name",
+                                                    "value": "pline",
+                                                    "linked": false,
+                                                    "invalidVar": false,
+                                                    "jsValue": "pline_"
+                                                },
+                                                {
+                                                    "name": "__model__",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "entities",
+                                                    "value": "pos1",
+                                                    "linked": false,
+                                                    "jsValue": "pos1_",
+                                                    "usedVars": [
+                                                        "pos1"
+                                                    ],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "close",
+                                                    "value": "'open'",
+                                                    "jsValue": "'open'",
+                                                    "linked": false,
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "variable": "pline",
+                                            "hasError": false,
+                                            "selectGeom": false
+                                        }
+                                    ],
+                                    "state": {
+                                        "procedure": []
+                                    },
+                                    "input": "~flowchart~nodes~0~output~edges~0~target",
+                                    "output": {
+                                        "name": "output",
+                                        "type": 1,
+                                        "edges": [
+                                            {
+                                                "source": "~flowchart~nodes~0~output~edges~0~target~parentNode~output",
+                                                "target": {
+                                                    "name": "input",
+                                                    "type": 0,
+                                                    "edges": [
+                                                        "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0"
+                                                    ],
+                                                    "meta": {
+                                                        "mode": 0,
+                                                        "opts": {}
+                                                    },
+                                                    "parentNode": {
+                                                        "name": "End",
+                                                        "id": "node_p7gx8fj9l",
+                                                        "position": {
+                                                            "x": 5340,
+                                                            "y": 5400
+                                                        },
+                                                        "enabled": true,
+                                                        "type": "end",
+                                                        "procedure": [
+                                                            {
+                                                                "type": 13,
+                                                                "ID": "",
+                                                                "meta": {
+                                                                    "name": "",
+                                                                    "module": ""
+                                                                },
+                                                                "argCount": 0,
+                                                                "args": [],
+                                                                "print": false,
+                                                                "enabled": true,
+                                                                "selected": false,
+                                                                "selectGeom": false,
+                                                                "hasError": false
+                                                            },
+                                                            {
+                                                                "type": 0,
+                                                                "ID": "prod-aw5hpgsqkd",
+                                                                "enabled": true,
+                                                                "print": false,
+                                                                "argCount": 2,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "var_name",
+                                                                        "value": "pos2",
+                                                                        "invalidVar": false,
+                                                                        "jsValue": "pos2_",
+                                                                        "linked": false
+                                                                    },
+                                                                    {
+                                                                        "name": "value",
+                                                                        "value": "#ps ?@name==\"pos2\"",
+                                                                        "linked": false,
+                                                                        "jsValue": "__modules__.query.Filter(__params__.model,  __modules__.query.Get(__params__.model, 'ps', null), 'name', null, '==', \"pos2\")",
+                                                                        "usedVars": [],
+                                                                        "invalidVar": false
+                                                                    }
+                                                                ],
+                                                                "selected": false,
+                                                                "variable": "pos2",
+                                                                "hasError": false,
+                                                                "selectGeom": false
+                                                            },
+                                                            {
+                                                                "type": 8,
+                                                                "ID": "prod-ppf2ecqi8o",
+                                                                "enabled": true,
+                                                                "print": false,
+                                                                "meta": {
+                                                                    "module": "make",
+                                                                    "name": "Position"
+                                                                },
+                                                                "argCount": 3,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "var_name",
+                                                                        "value": "ori",
+                                                                        "linked": false,
+                                                                        "invalidVar": false,
+                                                                        "jsValue": "ori_"
+                                                                    },
+                                                                    {
+                                                                        "name": "__model__",
+                                                                        "linked": false
+                                                                    },
+                                                                    {
+                                                                        "name": "coords",
+                                                                        "value": "[0, 0, 0]",
+                                                                        "jsValue": "[0, 0, 0]",
+                                                                        "invalidVar": false,
+                                                                        "linked": false,
+                                                                        "usedVars": []
+                                                                    }
+                                                                ],
+                                                                "selected": false,
+                                                                "variable": "ori",
+                                                                "hasError": false
+                                                            },
+                                                            {
+                                                                "type": 0,
+                                                                "ID": "prod-kmbyy6w7gcg",
+                                                                "enabled": true,
+                                                                "print": false,
+                                                                "argCount": 2,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "var_name",
+                                                                        "value": "aa",
+                                                                        "linked": false,
+                                                                        "invalidVar": false,
+                                                                        "jsValue": "aa_"
+                                                                    },
+                                                                    {
+                                                                        "name": "value",
+                                                                        "value": "pos2[ps_i]@pos1",
+                                                                        "linked": false,
+                                                                        "jsValue": "__modules__.attrib.Get(__params__.model, pos2_[pythonList(ps_i_, pos2_.length)], 'pos1', null)",
+                                                                        "usedVars": [
+                                                                            "ps_i",
+                                                                            "pos2"
+                                                                        ],
+                                                                        "invalidVar": false
+                                                                    }
+                                                                ],
+                                                                "selected": false,
+                                                                "variable": "aa",
+                                                                "hasError": false
+                                                            },
+                                                            {
+                                                                "type": 8,
+                                                                "ID": "prod-vpcbtyqxr7",
+                                                                "enabled": true,
+                                                                "print": false,
+                                                                "meta": {
+                                                                    "module": "make",
+                                                                    "name": "Polyline"
+                                                                },
+                                                                "argCount": 4,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "var_name",
+                                                                        "value": "pline",
+                                                                        "linked": false,
+                                                                        "invalidVar": false,
+                                                                        "jsValue": "pline_"
+                                                                    },
+                                                                    {
+                                                                        "name": "__model__",
+                                                                        "linked": false
+                                                                    },
+                                                                    {
+                                                                        "name": "entities",
+                                                                        "value": "[ori, pos2[ps_i]@pos1 , pos2[ps_i]]",
+                                                                        "jsValue": "[ori_,  __modules__.attrib.Get(__params__.model, pos2_[pythonList(ps_i_, pos2_.length)], 'pos1', null), pos2_[pythonList(ps_i_, pos2_.length)]]",
+                                                                        "usedVars": [
+                                                                            "ps_i",
+                                                                            "pos2",
+                                                                            "ori"
+                                                                        ],
+                                                                        "invalidVar": false,
+                                                                        "linked": false
+                                                                    },
+                                                                    {
+                                                                        "name": "close",
+                                                                        "value": "'open'",
+                                                                        "jsValue": "'open'",
+                                                                        "usedVars": [],
+                                                                        "invalidVar": false,
+                                                                        "linked": false
+                                                                    }
+                                                                ],
+                                                                "selected": false,
+                                                                "variable": "pline",
+                                                                "hasError": false
+                                                            },
+                                                            {
+                                                                "type": 0,
+                                                                "ID": "prod-ahho17akysg",
+                                                                "enabled": true,
+                                                                "print": false,
+                                                                "argCount": 2,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "var_name",
+                                                                        "value": "e",
+                                                                        "invalidVar": false,
+                                                                        "jsValue": "e_",
+                                                                        "linked": false
+                                                                    },
+                                                                    {
+                                                                        "name": "value",
+                                                                        "value": "pline#_e[1]",
+                                                                        "linked": false,
+                                                                        "jsValue": "__modules__.query.Get(__params__.model, '_e', pline_)[pythonList(1, __modules__.query.Get(__params__.model, '_e', pline_).length)]",
+                                                                        "usedVars": [
+                                                                            "pline"
+                                                                        ],
+                                                                        "invalidVar": false
+                                                                    }
+                                                                ],
+                                                                "selected": false,
+                                                                "variable": "e",
+                                                                "selectGeom": true,
+                                                                "hasError": false
+                                                            },
+                                                            {
+                                                                "type": 11,
+                                                                "ID": "Return",
+                                                                "meta": {
+                                                                    "name": "",
+                                                                    "module": ""
+                                                                },
+                                                                "argCount": 2,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "__model__",
+                                                                        "value": "",
+                                                                        "jsValue": "",
+                                                                        "linked": false
+                                                                    },
+                                                                    {
+                                                                        "name": "value",
+                                                                        "value": "",
+                                                                        "jsValue": "",
+                                                                        "linked": false
+                                                                    }
+                                                                ],
+                                                                "print": false,
+                                                                "enabled": true,
+                                                                "selected": false,
+                                                                "selectGeom": false,
+                                                                "hasError": false
+                                                            }
+                                                        ],
+                                                        "state": {
+                                                            "procedure": []
+                                                        },
+                                                        "input": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target",
+                                                        "output": {
+                                                            "name": "output",
+                                                            "type": 1,
+                                                            "edges": [],
+                                                            "meta": {
+                                                                "mode": 0
+                                                            },
+                                                            "parentNode": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode"
+                                                        },
+                                                        "hasError": false,
+                                                        "hasExecuted": true
+                                                    }
+                                                },
+                                                "selected": false
+                                            }
+                                        ],
+                                        "meta": {
+                                            "mode": 0
+                                        },
+                                        "parentNode": "~flowchart~nodes~0~output~edges~0~target~parentNode"
+                                    },
+                                    "hasError": false,
+                                    "hasExecuted": true
+                                }
+                            },
+                            "selected": false
+                        }
+                    ],
+                    "meta": {
+                        "mode": 0
+                    },
+                    "parentNode": "~flowchart~nodes~0"
+                },
+                "hasError": false,
+                "hasExecuted": true
+            },
+            "~flowchart~nodes~0~output~edges~0~target~parentNode",
+            "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode"
+        ],
+        "edges": [
+            "~flowchart~nodes~0~output~edges~0",
+            "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0"
+        ],
+        "functions": [
+            {
+                "flowchart": {
+                    "id": "ea545d15-edcd-8150-f07f-abc8d986b4e7",
+                    "name": "Norm To Plane",
+                    "nodes": [
+                        {
+                            "name": "Start",
+                            "id": "node_asv0sqbwpyh",
+                            "position": {
+                                "x": 5340,
+                                "y": 5000
+                            },
+                            "enabled": true,
+                            "type": "start",
+                            "procedure": [
+                                {
+                                    "type": 13,
+                                    "ID": "",
+                                    "meta": {
+                                        "name": "",
+                                        "module": ""
+                                    },
+                                    "argCount": 0,
+                                    "args": [],
+                                    "print": false,
+                                    "enabled": true,
+                                    "selected": false,
+                                    "selectGeom": false,
+                                    "hasError": false
+                                },
+                                {
+                                    "type": 8,
+                                    "ID": "prod-72jsw7g6adn",
+                                    "enabled": true,
+                                    "print": false,
+                                    "meta": {
+                                        "module": "pattern",
+                                        "name": "Rectangle"
+                                    },
+                                    "argCount": 4,
+                                    "args": [
+                                        {
+                                            "name": "var_name",
+                                            "value": "rec_pos",
+                                            "invalidVar": false,
+                                            "jsValue": "rec_pos_",
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "__model__",
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "origin",
+                                            "value": "[[0, 0, 0], [rand(-1, 1), rand(-1, 1), rand(-1, 1)], [rand(-1, 1), rand(-1, 1), rand(-1, 1)]]",
+                                            "linked": false,
+                                            "jsValue": "[[0, 0, 0], [rand(-1, 1), rand(-1, 1), rand(-1, 1)], [rand(-1, 1), rand(-1, 1), rand(-1, 1)]]",
+                                            "usedVars": [],
+                                            "invalidVar": false
+                                        },
+                                        {
+                                            "name": "size",
+                                            "value": "10",
+                                            "linked": false,
+                                            "jsValue": "10",
+                                            "usedVars": [],
+                                            "invalidVar": false
+                                        }
+                                    ],
+                                    "selected": false,
+                                    "variable": "rec_pos",
+                                    "hasError": false,
+                                    "selectGeom": false
+                                },
+                                {
+                                    "type": 8,
+                                    "ID": "prod-hlm5b5f4ga",
+                                    "enabled": true,
+                                    "print": false,
+                                    "meta": {
+                                        "module": "make",
+                                        "name": "Polyline"
+                                    },
+                                    "argCount": 4,
+                                    "args": [
+                                        {
+                                            "name": "var_name",
+                                            "value": "pline",
+                                            "linked": false,
+                                            "invalidVar": false,
+                                            "jsValue": "pline_"
+                                        },
+                                        {
+                                            "name": "__model__",
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "entities",
+                                            "value": "rec_pos",
+                                            "linked": false,
+                                            "jsValue": "rec_pos_",
+                                            "usedVars": [
+                                                "rec_pos"
+                                            ],
+                                            "invalidVar": false
+                                        },
+                                        {
+                                            "name": "close",
+                                            "value": "'close'",
+                                            "jsValue": "'close'",
+                                            "usedVars": [],
+                                            "invalidVar": false,
+                                            "linked": false
+                                        }
+                                    ],
+                                    "selected": false,
+                                    "variable": "pline",
+                                    "hasError": false,
+                                    "selectGeom": false
+                                },
+                                {
+                                    "type": 0,
+                                    "ID": "prod-98iq1d55ips",
+                                    "enabled": true,
+                                    "print": false,
+                                    "argCount": 2,
+                                    "args": [
+                                        {
+                                            "name": "var_name",
+                                            "value": "pline_e_lst",
+                                            "invalidVar": false,
+                                            "jsValue": "pline_e_lst_",
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "value",
+                                            "value": "pline#_e",
+                                            "linked": false,
+                                            "jsValue": "__modules__.query.Get(__params__.model, '_e', pline_)",
+                                            "usedVars": [
+                                                "pline"
+                                            ],
+                                            "invalidVar": false
+                                        }
+                                    ],
+                                    "selected": false,
+                                    "variable": "pline_e_lst",
+                                    "hasError": false,
+                                    "selectGeom": false
+                                },
+                                {
+                                    "type": 0,
+                                    "ID": "prod-a4gbicw6hf",
+                                    "enabled": true,
+                                    "print": false,
+                                    "argCount": 2,
+                                    "args": [
+                                        {
+                                            "name": "var_name",
+                                            "value": "edg",
+                                            "invalidVar": false,
+                                            "jsValue": "edg_",
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "value",
+                                            "value": "pline_e_lst[0]",
+                                            "linked": false,
+                                            "jsValue": "pline_e_lst_[pythonList(0, pline_e_lst_.length)]",
+                                            "usedVars": [
+                                                "pline_e_lst"
+                                            ],
+                                            "invalidVar": false
+                                        }
+                                    ],
+                                    "selected": false,
+                                    "variable": "edg",
+                                    "hasError": false
+                                },
+                                {
+                                    "type": 8,
+                                    "ID": "prod-2uw0i10rwpx",
+                                    "enabled": true,
+                                    "print": false,
+                                    "meta": {
+                                        "module": "calc",
+                                        "name": "Vector"
+                                    },
+                                    "argCount": 3,
+                                    "args": [
+                                        {
+                                            "name": "var_name",
+                                            "value": "e_vec",
+                                            "invalidVar": false,
+                                            "jsValue": "e_vec_",
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "__model__",
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "entities",
+                                            "value": "edg",
+                                            "linked": false,
+                                            "jsValue": "edg_",
+                                            "usedVars": [
+                                                "edg"
+                                            ],
+                                            "invalidVar": false
+                                        }
+                                    ],
+                                    "selected": false,
+                                    "variable": "e_vec",
+                                    "hasError": false,
+                                    "selectGeom": false
+                                },
+                                {
+                                    "type": 8,
+                                    "ID": "prod-3ly64elmwfl",
+                                    "enabled": true,
+                                    "print": false,
+                                    "meta": {
+                                        "module": "calc",
+                                        "name": "Eval"
+                                    },
+                                    "argCount": 4,
+                                    "args": [
+                                        {
+                                            "name": "var_name",
+                                            "value": "c",
+                                            "invalidVar": false,
+                                            "jsValue": "c_",
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "__model__",
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "entities",
+                                            "value": "edg",
+                                            "linked": false,
+                                            "jsValue": "edg_",
+                                            "usedVars": [
+                                                "edg"
+                                            ],
+                                            "invalidVar": false
+                                        },
+                                        {
+                                            "name": "param",
+                                            "value": "0",
+                                            "linked": false,
+                                            "jsValue": "0",
+                                            "usedVars": [],
+                                            "invalidVar": false
+                                        }
+                                    ],
+                                    "selected": false,
+                                    "variable": "c",
+                                    "hasError": false,
+                                    "selectGeom": false
+                                },
+                                {
+                                    "type": 10,
+                                    "ID": "prod-aiviue2fd1",
+                                    "enabled": true,
+                                    "print": false,
+                                    "argCount": 2,
+                                    "meta": {
+                                        "module": "Input",
+                                        "name": "Constant",
+                                        "inputMode": 0,
+                                        "description": "Normal"
+                                    },
+                                    "args": [
+                                        {
+                                            "name": "const_name",
+                                            "value": "norm",
+                                            "invalidVar": false,
+                                            "jsValue": "norm_",
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "__input__",
+                                            "value": "e_vec",
+                                            "linked": false,
+                                            "jsValue": "e_vec_",
+                                            "usedVars": [
+                                                "e_vec"
+                                            ],
+                                            "invalidVar": false
+                                        }
+                                    ],
+                                    "selected": false,
+                                    "hasError": false
+                                },
+                                {
+                                    "type": 10,
+                                    "ID": "prod-i2radette1",
+                                    "enabled": true,
+                                    "print": false,
+                                    "argCount": 2,
+                                    "meta": {
+                                        "module": "Input",
+                                        "name": "Constant",
+                                        "inputMode": 0,
+                                        "description": "Center of plane"
+                                    },
+                                    "args": [
+                                        {
+                                            "name": "const_name",
+                                            "value": "coord",
+                                            "jsValue": "coord_",
+                                            "invalidVar": false,
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "__input__",
+                                            "value": "c",
+                                            "linked": false,
+                                            "jsValue": "c_",
+                                            "usedVars": [
+                                                "c"
+                                            ],
+                                            "invalidVar": false
+                                        }
+                                    ],
+                                    "selected": false,
+                                    "hasError": false
+                                },
+                                {
+                                    "type": 10,
+                                    "ID": "prod-3zdms7tw9wy",
+                                    "enabled": true,
+                                    "print": false,
+                                    "argCount": 2,
+                                    "meta": {
+                                        "module": "Input",
+                                        "name": "Constant",
+                                        "inputMode": 0,
+                                        "description": "Optional v1, \"x\" of plane, random if null"
+                                    },
+                                    "args": [
+                                        {
+                                            "name": "const_name",
+                                            "value": "v1",
+                                            "invalidVar": false,
+                                            "jsValue": "v1_",
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "__input__",
+                                            "value": "null",
+                                            "jsValue": "null",
+                                            "usedVars": [],
+                                            "invalidVar": false,
+                                            "linked": false
+                                        }
+                                    ],
+                                    "selected": false,
+                                    "hasError": false
+                                }
+                            ],
+                            "state": {
+                                "procedure": []
+                            },
+                            "input": {
+                                "name": "input",
+                                "type": 0,
+                                "edges": [],
+                                "meta": {
+                                    "mode": 0,
+                                    "opts": {}
+                                },
+                                "parentNode": "~flowchart~functions~0~flowchart~nodes~0"
+                            },
+                            "output": {
+                                "name": "output",
+                                "type": 1,
+                                "edges": [
+                                    {
+                                        "source": "~flowchart~functions~0~flowchart~nodes~0~output",
+                                        "target": {
+                                            "name": "input",
+                                            "type": 0,
+                                            "edges": [
+                                                "~flowchart~functions~0~flowchart~nodes~0~output~edges~0"
+                                            ],
+                                            "meta": {
+                                                "mode": 0,
+                                                "opts": {}
+                                            },
+                                            "parentNode": {
+                                                "name": "End",
+                                                "id": "node_5cqllv2umgw",
+                                                "position": {
+                                                    "x": 5340,
+                                                    "y": 5400
+                                                },
+                                                "enabled": true,
+                                                "type": "end",
+                                                "procedure": [
+                                                    {
+                                                        "type": 13,
+                                                        "ID": "",
+                                                        "meta": {
+                                                            "name": "",
+                                                            "module": ""
+                                                        },
+                                                        "argCount": 0,
+                                                        "args": [],
+                                                        "print": false,
+                                                        "enabled": true,
+                                                        "selected": false,
+                                                        "selectGeom": false,
+                                                        "hasError": false
+                                                    },
+                                                    {
+                                                        "type": 0,
+                                                        "ID": "prod-synnsin0frf",
+                                                        "enabled": true,
+                                                        "print": false,
+                                                        "argCount": 2,
+                                                        "args": [
+                                                            {
+                                                                "name": "var_name",
+                                                                "value": "vec1",
+                                                                "invalidVar": false,
+                                                                "jsValue": "vec1_",
+                                                                "linked": false
+                                                            },
+                                                            {
+                                                                "name": "value",
+                                                                "value": "v1",
+                                                                "linked": false,
+                                                                "jsValue": "v1_",
+                                                                "usedVars": [
+                                                                    "v1"
+                                                                ],
+                                                                "invalidVar": false
+                                                            }
+                                                        ],
+                                                        "selected": false,
+                                                        "variable": "vec1",
+                                                        "hasError": false
+                                                    },
+                                                    {
+                                                        "type": 1,
+                                                        "ID": "prod-v99mps330gr",
+                                                        "enabled": true,
+                                                        "print": false,
+                                                        "argCount": 1,
+                                                        "args": [
+                                                            {
+                                                                "name": "condition",
+                                                                "value": "vec1 == null",
+                                                                "jsValue": "vec1_ == null",
+                                                                "usedVars": [
+                                                                    "vec1"
+                                                                ],
+                                                                "invalidVar": false,
+                                                                "linked": false
+                                                            }
+                                                        ],
+                                                        "children": [
+                                                            {
+                                                                "type": 13,
+                                                                "ID": "",
+                                                                "parent": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2",
+                                                                "meta": {
+                                                                    "name": "",
+                                                                    "module": ""
+                                                                },
+                                                                "argCount": 0,
+                                                                "args": [],
+                                                                "print": false,
+                                                                "enabled": true,
+                                                                "selected": false,
+                                                                "selectGeom": false,
+                                                                "hasError": false
+                                                            },
+                                                            {
+                                                                "type": 0,
+                                                                "ID": "prod-53c6o285vyg",
+                                                                "enabled": true,
+                                                                "print": false,
+                                                                "argCount": 2,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "var_name",
+                                                                        "value": "equal",
+                                                                        "invalidVar": false,
+                                                                        "jsValue": "equal_",
+                                                                        "linked": false
+                                                                    },
+                                                                    {
+                                                                        "name": "value",
+                                                                        "value": "true",
+                                                                        "linked": false,
+                                                                        "jsValue": "true",
+                                                                        "usedVars": [],
+                                                                        "invalidVar": false
+                                                                    }
+                                                                ],
+                                                                "selected": false,
+                                                                "variable": "equal",
+                                                                "hasError": false,
+                                                                "selectGeom": false,
+                                                                "parent": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2"
+                                                            },
+                                                            {
+                                                                "type": 14,
+                                                                "ID": "prod-kl4z58b1nqj",
+                                                                "enabled": true,
+                                                                "print": false,
+                                                                "argCount": 1,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "comment",
+                                                                        "value": "Creating a random vector to cross with edge vector",
+                                                                        "linked": false
+                                                                    }
+                                                                ],
+                                                                "selected": false,
+                                                                "hasError": false,
+                                                                "selectGeom": false,
+                                                                "parent": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2"
+                                                            },
+                                                            {
+                                                                "type": 0,
+                                                                "ID": "prod-twmzoja3hq9",
+                                                                "enabled": true,
+                                                                "print": false,
+                                                                "argCount": 2,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "var_name",
+                                                                        "value": "anyvec",
+                                                                        "invalidVar": false,
+                                                                        "jsValue": "anyvec_",
+                                                                        "linked": false
+                                                                    },
+                                                                    {
+                                                                        "name": "value",
+                                                                        "value": "null",
+                                                                        "linked": false,
+                                                                        "jsValue": "null",
+                                                                        "usedVars": [],
+                                                                        "invalidVar": false
+                                                                    }
+                                                                ],
+                                                                "selected": false,
+                                                                "variable": "anyvec",
+                                                                "hasError": false,
+                                                                "selectGeom": false,
+                                                                "parent": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2"
+                                                            },
+                                                            {
+                                                                "type": 5,
+                                                                "ID": "prod-9u9oxurnss",
+                                                                "enabled": true,
+                                                                "print": false,
+                                                                "argCount": 1,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "condition",
+                                                                        "value": "equal",
+                                                                        "jsValue": "equal_",
+                                                                        "usedVars": [
+                                                                            "equal"
+                                                                        ],
+                                                                        "invalidVar": false,
+                                                                        "linked": false
+                                                                    }
+                                                                ],
+                                                                "children": [
+                                                                    {
+                                                                        "type": 13,
+                                                                        "ID": "prod-pt2v5p98ln8",
+                                                                        "parent": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2~children~4",
+                                                                        "meta": {
+                                                                            "name": "",
+                                                                            "module": ""
+                                                                        },
+                                                                        "argCount": 0,
+                                                                        "args": [],
+                                                                        "print": false,
+                                                                        "enabled": true,
+                                                                        "selected": false,
+                                                                        "selectGeom": false,
+                                                                        "hasError": false
+                                                                    },
+                                                                    {
+                                                                        "type": 14,
+                                                                        "parent": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2~children~4",
+                                                                        "ID": "prod-fm8l1mmj7ws",
+                                                                        "enabled": true,
+                                                                        "print": false,
+                                                                        "argCount": 1,
+                                                                        "args": [
+                                                                            {
+                                                                                "name": "comment",
+                                                                                "value": "There's a very low chance for both vectors to be equal, but it's still necessary to check.",
+                                                                                "linked": false
+                                                                            }
+                                                                        ],
+                                                                        "selected": false,
+                                                                        "hasError": false,
+                                                                        "selectGeom": false
+                                                                    },
+                                                                    {
+                                                                        "type": 14,
+                                                                        "parent": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2~children~4",
+                                                                        "ID": "prod-ixto45ex0m",
+                                                                        "enabled": true,
+                                                                        "print": false,
+                                                                        "argCount": 1,
+                                                                        "args": [
+                                                                            {
+                                                                                "name": "comment",
+                                                                                "value": "if unitised anyvec is equal to unitised edgevec, randomise a new anyvec",
+                                                                                "linked": false
+                                                                            }
+                                                                        ],
+                                                                        "selected": false,
+                                                                        "hasError": false,
+                                                                        "selectGeom": false
+                                                                    },
+                                                                    {
+                                                                        "type": 0,
+                                                                        "parent": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2~children~4",
+                                                                        "ID": "prod-25nypfowfdaj",
+                                                                        "enabled": true,
+                                                                        "print": false,
+                                                                        "argCount": 2,
+                                                                        "args": [
+                                                                            {
+                                                                                "name": "var_name",
+                                                                                "value": "anyvec",
+                                                                                "invalidVar": false,
+                                                                                "jsValue": "anyvec_",
+                                                                                "linked": false
+                                                                            },
+                                                                            {
+                                                                                "name": "value",
+                                                                                "value": "[rand(-1, 1), rand(-1, 1), rand(-1, 1)]",
+                                                                                "linked": false,
+                                                                                "jsValue": "[rand(-1, 1), rand(-1, 1), rand(-1, 1)]",
+                                                                                "usedVars": [],
+                                                                                "invalidVar": false
+                                                                            }
+                                                                        ],
+                                                                        "selected": false,
+                                                                        "variable": "anyvec",
+                                                                        "hasError": false,
+                                                                        "selectGeom": false
+                                                                    },
+                                                                    {
+                                                                        "type": 1,
+                                                                        "parent": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2~children~4",
+                                                                        "ID": "prod-7itzyict42e",
+                                                                        "enabled": true,
+                                                                        "print": false,
+                                                                        "argCount": 1,
+                                                                        "args": [
+                                                                            {
+                                                                                "name": "condition",
+                                                                                "value": "!vecEqual(vecNorm(anyvec), vecNorm(norm), 0) && !vecEqual(vecRev(vecNorm(anyvec)), vecNorm(norm), 0)",
+                                                                                "linked": false,
+                                                                                "jsValue": "!vecEqual(vecNorm(anyvec_), vecNorm(norm_), 0) && !vecEqual(vecRev(vecNorm(anyvec_)), vecNorm(norm_), 0)",
+                                                                                "invalidVar": false,
+                                                                                "usedVars": [
+                                                                                    "norm",
+                                                                                    "anyvec"
+                                                                                ]
+                                                                            }
+                                                                        ],
+                                                                        "children": [
+                                                                            {
+                                                                                "type": 13,
+                                                                                "ID": "prod-dx46h948nui",
+                                                                                "parent": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2~children~4~children~4",
+                                                                                "meta": {
+                                                                                    "name": "",
+                                                                                    "module": ""
+                                                                                },
+                                                                                "argCount": 0,
+                                                                                "args": [],
+                                                                                "print": false,
+                                                                                "enabled": true,
+                                                                                "selected": false,
+                                                                                "selectGeom": false,
+                                                                                "hasError": false
+                                                                            },
+                                                                            {
+                                                                                "type": 0,
+                                                                                "parent": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2~children~4~children~4",
+                                                                                "ID": "prod-19xceruujki",
+                                                                                "enabled": true,
+                                                                                "print": false,
+                                                                                "argCount": 2,
+                                                                                "args": [
+                                                                                    {
+                                                                                        "name": "var_name",
+                                                                                        "value": "equal",
+                                                                                        "invalidVar": false,
+                                                                                        "jsValue": "equal_",
+                                                                                        "linked": false
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "value",
+                                                                                        "value": "false",
+                                                                                        "linked": false,
+                                                                                        "jsValue": "false",
+                                                                                        "usedVars": [],
+                                                                                        "invalidVar": false
+                                                                                    }
+                                                                                ],
+                                                                                "selected": false,
+                                                                                "variable": "equal",
+                                                                                "hasError": false,
+                                                                                "selectGeom": false
+                                                                            }
+                                                                        ],
+                                                                        "hasError": false,
+                                                                        "selected": false,
+                                                                        "selectGeom": false
+                                                                    }
+                                                                ],
+                                                                "selected": false,
+                                                                "hasError": false,
+                                                                "selectGeom": false,
+                                                                "parent": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2"
+                                                            },
+                                                            {
+                                                                "type": 0,
+                                                                "ID": "prod-e5g5n26rrev",
+                                                                "enabled": true,
+                                                                "print": false,
+                                                                "argCount": 2,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "var_name",
+                                                                        "value": "vec1",
+                                                                        "invalidVar": false,
+                                                                        "jsValue": "vec1_",
+                                                                        "linked": false
+                                                                    },
+                                                                    {
+                                                                        "name": "value",
+                                                                        "value": "vecCross(norm, anyvec)",
+                                                                        "linked": false,
+                                                                        "jsValue": "vecCross(norm_, anyvec_)",
+                                                                        "usedVars": [
+                                                                            "norm",
+                                                                            "anyvec"
+                                                                        ],
+                                                                        "invalidVar": false
+                                                                    }
+                                                                ],
+                                                                "selected": false,
+                                                                "variable": "vec1",
+                                                                "hasError": false,
+                                                                "selectGeom": false,
+                                                                "parent": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2"
+                                                            }
+                                                        ],
+                                                        "selected": false,
+                                                        "hasError": false
+                                                    },
+                                                    {
+                                                        "type": 0,
+                                                        "ID": "prod-rrwjxx9fof",
+                                                        "enabled": true,
+                                                        "print": false,
+                                                        "argCount": 2,
+                                                        "args": [
+                                                            {
+                                                                "name": "var_name",
+                                                                "value": "v2",
+                                                                "linked": false,
+                                                                "invalidVar": false,
+                                                                "jsValue": "v2_"
+                                                            },
+                                                            {
+                                                                "name": "value",
+                                                                "value": "vecCross(norm, vec1)",
+                                                                "linked": false,
+                                                                "jsValue": "vecCross(norm_, vec1_)",
+                                                                "invalidVar": false,
+                                                                "usedVars": [
+                                                                    "norm",
+                                                                    "vec1"
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "selected": false,
+                                                        "variable": "v2",
+                                                        "hasError": false,
+                                                        "selectGeom": false
+                                                    },
+                                                    {
+                                                        "type": 0,
+                                                        "ID": "prod-fbxbzkgor19",
+                                                        "enabled": true,
+                                                        "print": false,
+                                                        "argCount": 2,
+                                                        "args": [
+                                                            {
+                                                                "name": "var_name",
+                                                                "value": "pln",
+                                                                "invalidVar": false,
+                                                                "jsValue": "pln_",
+                                                                "linked": false
+                                                            },
+                                                            {
+                                                                "name": "value",
+                                                                "value": "[coord, vec1, v2]",
+                                                                "linked": false,
+                                                                "jsValue": "[coord_, vec1_, v2_]",
+                                                                "usedVars": [
+                                                                    "coord",
+                                                                    "vec1",
+                                                                    "v2"
+                                                                ],
+                                                                "invalidVar": false
+                                                            }
+                                                        ],
+                                                        "selected": false,
+                                                        "variable": "pln",
+                                                        "hasError": false,
+                                                        "selectGeom": false
+                                                    },
+                                                    {
+                                                        "type": 11,
+                                                        "ID": "Return",
+                                                        "meta": {
+                                                            "name": "",
+                                                            "module": ""
+                                                        },
+                                                        "argCount": 2,
+                                                        "args": [
+                                                            {
+                                                                "name": "__model__",
+                                                                "value": "",
+                                                                "jsValue": "",
+                                                                "linked": false
+                                                            },
+                                                            {
+                                                                "name": "value",
+                                                                "value": "pln",
+                                                                "jsValue": "pln_",
+                                                                "linked": false,
+                                                                "usedVars": [
+                                                                    "pln"
+                                                                ],
+                                                                "invalidVar": false
+                                                            }
+                                                        ],
+                                                        "print": false,
+                                                        "enabled": true,
+                                                        "selected": false,
+                                                        "selectGeom": false,
+                                                        "hasError": false
+                                                    }
+                                                ],
+                                                "state": {
+                                                    "procedure": []
+                                                },
+                                                "input": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target",
+                                                "output": {
+                                                    "name": "output",
+                                                    "type": 1,
+                                                    "edges": [],
+                                                    "meta": {
+                                                        "mode": 0
+                                                    },
+                                                    "parentNode": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode"
+                                                },
+                                                "hasError": false,
+                                                "hasExecuted": true
+                                            }
+                                        },
+                                        "selected": false
+                                    }
+                                ],
+                                "meta": {
+                                    "mode": 0
+                                },
+                                "parentNode": "~flowchart~functions~0~flowchart~nodes~0"
+                            },
+                            "hasError": false,
+                            "hasExecuted": true
+                        },
+                        "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode"
+                    ],
+                    "edges": [
+                        "~flowchart~functions~0~flowchart~nodes~0~output~edges~0"
+                    ]
+                },
+                "name": "Norm_To_Plane",
+                "module": "Imported",
+                "doc": {
+                    "name": "Norm_To_Plane",
+                    "module": "Imported",
+                    "description": "Normal Vector to Plane",
+                    "summary": "Normal Vector to Plane",
+                    "parameters": [
+                        {
+                            "name": "norm",
+                            "description": "Normal"
+                        },
+                        {
+                            "name": "coord",
+                            "description": "Center of plane"
+                        },
+                        {
+                            "name": "v1",
+                            "description": "Optional v1, \"x\" of plane, random if null"
+                        }
+                    ],
+                    "returns": "Plane, with specified normal, center coordinate, and \"x\" vector"
+                },
+                "importedFile": "{\n    \"name\": \"Plane_from_normal\",\n    \"author\": \"new_user\",\n    \"flowchart\": {\n        \"id\": \"ea545d15-edcd-8150-f07f-abc8d986b4e7\",\n        \"name\": \"Norm To Plane\",\n        \"description\": \"Normal Vector to Plane\",\n        \"language\": \"js\",\n        \"meta\": {\n            \"selected_nodes\": [\n                0\n            ]\n        },\n        \"nodes\": [\n            {\n                \"name\": \"Start\",\n                \"id\": \"node_asv0sqbwpyh\",\n                \"position\": {\n                    \"x\": 5340,\n                    \"y\": 5000\n                },\n                \"enabled\": true,\n                \"type\": \"start\",\n                \"procedure\": [\n                    {\n                        \"type\": 13,\n                        \"ID\": \"\",\n                        \"meta\": {\n                            \"name\": \"\",\n                            \"module\": \"\"\n                        },\n                        \"argCount\": 0,\n                        \"args\": [],\n                        \"print\": false,\n                        \"enabled\": true,\n                        \"selected\": false,\n                        \"selectGeom\": false,\n                        \"hasError\": false\n                    },\n                    {\n                        \"type\": 8,\n                        \"ID\": \"prod-72jsw7g6adn\",\n                        \"enabled\": true,\n                        \"print\": false,\n                        \"meta\": {\n                            \"module\": \"pattern\",\n                            \"name\": \"Rectangle\"\n                        },\n                        \"argCount\": 4,\n                        \"args\": [\n                            {\n                                \"name\": \"var_name\",\n                                \"value\": \"rec_pos\",\n                                \"invalidVar\": false,\n                                \"jsValue\": \"rec_pos_\",\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"__model__\",\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"origin\",\n                                \"value\": \"[[0, 0, 0], [rand(-1, 1), rand(-1, 1), rand(-1, 1)], [rand(-1, 1), rand(-1, 1), rand(-1, 1)]]\",\n                                \"linked\": false,\n                                \"jsValue\": \"[[0, 0, 0], [rand(-1, 1), rand(-1, 1), rand(-1, 1)], [rand(-1, 1), rand(-1, 1), rand(-1, 1)]]\",\n                                \"usedVars\": [],\n                                \"invalidVar\": false\n                            },\n                            {\n                                \"name\": \"size\",\n                                \"value\": \"10\",\n                                \"linked\": false,\n                                \"jsValue\": \"10\",\n                                \"usedVars\": [],\n                                \"invalidVar\": false\n                            }\n                        ],\n                        \"selected\": false,\n                        \"variable\": \"rec_pos\",\n                        \"hasError\": false,\n                        \"selectGeom\": false\n                    },\n                    {\n                        \"type\": 8,\n                        \"ID\": \"prod-hlm5b5f4ga\",\n                        \"enabled\": true,\n                        \"print\": false,\n                        \"meta\": {\n                            \"module\": \"make\",\n                            \"name\": \"Polyline\"\n                        },\n                        \"argCount\": 4,\n                        \"args\": [\n                            {\n                                \"name\": \"var_name\",\n                                \"value\": \"pline\",\n                                \"linked\": false,\n                                \"invalidVar\": false,\n                                \"jsValue\": \"pline_\"\n                            },\n                            {\n                                \"name\": \"__model__\",\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"entities\",\n                                \"value\": \"rec_pos\",\n                                \"linked\": false,\n                                \"jsValue\": \"rec_pos_\",\n                                \"usedVars\": [\n                                    \"rec_pos\"\n                                ],\n                                \"invalidVar\": false\n                            },\n                            {\n                                \"name\": \"close\",\n                                \"value\": \"'close'\",\n                                \"jsValue\": \"'close'\",\n                                \"usedVars\": [],\n                                \"invalidVar\": false,\n                                \"linked\": false\n                            }\n                        ],\n                        \"selected\": false,\n                        \"variable\": \"pline\",\n                        \"hasError\": false,\n                        \"selectGeom\": false\n                    },\n                    {\n                        \"type\": 0,\n                        \"ID\": \"prod-98iq1d55ips\",\n                        \"enabled\": true,\n                        \"print\": false,\n                        \"argCount\": 2,\n                        \"args\": [\n                            {\n                                \"name\": \"var_name\",\n                                \"value\": \"pline_e_lst\",\n                                \"invalidVar\": false,\n                                \"jsValue\": \"pline_e_lst_\",\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"value\",\n                                \"value\": \"pline#_e\",\n                                \"linked\": false,\n                                \"jsValue\": \"__modules__.query.Get(__params__.model, '_e', pline_)\",\n                                \"usedVars\": [\n                                    \"pline\"\n                                ],\n                                \"invalidVar\": false\n                            }\n                        ],\n                        \"selected\": false,\n                        \"variable\": \"pline_e_lst\",\n                        \"hasError\": false,\n                        \"selectGeom\": false\n                    },\n                    {\n                        \"type\": 0,\n                        \"ID\": \"prod-a4gbicw6hf\",\n                        \"enabled\": true,\n                        \"print\": false,\n                        \"argCount\": 2,\n                        \"args\": [\n                            {\n                                \"name\": \"var_name\",\n                                \"value\": \"edg\",\n                                \"invalidVar\": false,\n                                \"jsValue\": \"edg_\",\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"value\",\n                                \"value\": \"pline_e_lst[0]\",\n                                \"linked\": false,\n                                \"jsValue\": \"pline_e_lst_[pythonList(0, pline_e_lst_.length)]\",\n                                \"usedVars\": [\n                                    \"pline_e_lst\"\n                                ],\n                                \"invalidVar\": false\n                            }\n                        ],\n                        \"selected\": false,\n                        \"variable\": \"edg\",\n                        \"hasError\": false\n                    },\n                    {\n                        \"type\": 8,\n                        \"ID\": \"prod-2uw0i10rwpx\",\n                        \"enabled\": true,\n                        \"print\": false,\n                        \"meta\": {\n                            \"module\": \"calc\",\n                            \"name\": \"Vector\"\n                        },\n                        \"argCount\": 3,\n                        \"args\": [\n                            {\n                                \"name\": \"var_name\",\n                                \"value\": \"e_vec\",\n                                \"invalidVar\": false,\n                                \"jsValue\": \"e_vec_\",\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"__model__\",\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"entities\",\n                                \"value\": \"edg\",\n                                \"linked\": false,\n                                \"jsValue\": \"edg_\",\n                                \"usedVars\": [\n                                    \"edg\"\n                                ],\n                                \"invalidVar\": false\n                            }\n                        ],\n                        \"selected\": false,\n                        \"variable\": \"e_vec\",\n                        \"hasError\": false,\n                        \"selectGeom\": false\n                    },\n                    {\n                        \"type\": 8,\n                        \"ID\": \"prod-3ly64elmwfl\",\n                        \"enabled\": true,\n                        \"print\": false,\n                        \"meta\": {\n                            \"module\": \"calc\",\n                            \"name\": \"Eval\"\n                        },\n                        \"argCount\": 4,\n                        \"args\": [\n                            {\n                                \"name\": \"var_name\",\n                                \"value\": \"c\",\n                                \"invalidVar\": false,\n                                \"jsValue\": \"c_\",\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"__model__\",\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"entities\",\n                                \"value\": \"edg\",\n                                \"linked\": false,\n                                \"jsValue\": \"edg_\",\n                                \"usedVars\": [\n                                    \"edg\"\n                                ],\n                                \"invalidVar\": false\n                            },\n                            {\n                                \"name\": \"param\",\n                                \"value\": \"0\",\n                                \"linked\": false,\n                                \"jsValue\": \"0\",\n                                \"usedVars\": [],\n                                \"invalidVar\": false\n                            }\n                        ],\n                        \"selected\": false,\n                        \"variable\": \"c\",\n                        \"hasError\": false,\n                        \"selectGeom\": false\n                    },\n                    {\n                        \"type\": 10,\n                        \"ID\": \"prod-aiviue2fd1\",\n                        \"enabled\": true,\n                        \"print\": false,\n                        \"argCount\": 2,\n                        \"meta\": {\n                            \"module\": \"Input\",\n                            \"name\": \"Constant\",\n                            \"inputMode\": 0,\n                            \"description\": \"Normal\"\n                        },\n                        \"args\": [\n                            {\n                                \"name\": \"const_name\",\n                                \"value\": \"norm\",\n                                \"invalidVar\": false,\n                                \"jsValue\": \"norm_\",\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"__input__\",\n                                \"value\": \"e_vec\",\n                                \"linked\": false,\n                                \"jsValue\": \"e_vec_\",\n                                \"usedVars\": [\n                                    \"e_vec\"\n                                ],\n                                \"invalidVar\": false\n                            }\n                        ],\n                        \"selected\": false,\n                        \"hasError\": false\n                    },\n                    {\n                        \"type\": 10,\n                        \"ID\": \"prod-i2radette1\",\n                        \"enabled\": true,\n                        \"print\": false,\n                        \"argCount\": 2,\n                        \"meta\": {\n                            \"module\": \"Input\",\n                            \"name\": \"Constant\",\n                            \"inputMode\": 0,\n                            \"description\": \"Center of plane\"\n                        },\n                        \"args\": [\n                            {\n                                \"name\": \"const_name\",\n                                \"value\": \"coord\",\n                                \"jsValue\": \"coord_\",\n                                \"invalidVar\": false,\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"__input__\",\n                                \"value\": \"c\",\n                                \"linked\": false,\n                                \"jsValue\": \"c_\",\n                                \"usedVars\": [\n                                    \"c\"\n                                ],\n                                \"invalidVar\": false\n                            }\n                        ],\n                        \"selected\": false,\n                        \"hasError\": false\n                    },\n                    {\n                        \"type\": 10,\n                        \"ID\": \"prod-3zdms7tw9wy\",\n                        \"enabled\": true,\n                        \"print\": false,\n                        \"argCount\": 2,\n                        \"meta\": {\n                            \"module\": \"Input\",\n                            \"name\": \"Constant\",\n                            \"inputMode\": 0,\n                            \"description\": \"Optional v1, \\\"x\\\" of plane, random if null\"\n                        },\n                        \"args\": [\n                            {\n                                \"name\": \"const_name\",\n                                \"value\": \"v1\",\n                                \"invalidVar\": false,\n                                \"jsValue\": \"v1_\",\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"__input__\",\n                                \"value\": \"null\",\n                                \"jsValue\": \"null\",\n                                \"usedVars\": [],\n                                \"invalidVar\": false,\n                                \"linked\": false\n                            }\n                        ],\n                        \"selected\": false,\n                        \"hasError\": false\n                    }\n                ],\n                \"state\": {\n                    \"procedure\": []\n                },\n                \"input\": {\n                    \"name\": \"input\",\n                    \"type\": 0,\n                    \"edges\": [],\n                    \"meta\": {\n                        \"mode\": 0,\n                        \"opts\": {}\n                    },\n                    \"parentNode\": \"\\x7eflowchart~nodes~0\"\n                },\n                \"output\": {\n                    \"name\": \"output\",\n                    \"type\": 1,\n                    \"edges\": [\n                        {\n                            \"source\": \"~flowchart~nodes~0~output\",\n                            \"target\": {\n                                \"name\": \"input\",\n                                \"type\": 0,\n                                \"edges\": [\n                                    \"~flowchart~nodes~0~output~edges~0\"\n                                ],\n                                \"meta\": {\n                                    \"mode\": 0,\n                                    \"opts\": {}\n                                },\n                                \"parentNode\": {\n                                    \"name\": \"End\",\n                                    \"id\": \"node_5cqllv2umgw\",\n                                    \"position\": {\n                                        \"x\": 5340,\n                                        \"y\": 5400\n                                    },\n                                    \"enabled\": true,\n                                    \"type\": \"end\",\n                                    \"procedure\": [\n                                        {\n                                            \"type\": 13,\n                                            \"ID\": \"\",\n                                            \"meta\": {\n                                                \"name\": \"\",\n                                                \"module\": \"\"\n                                            },\n                                            \"argCount\": 0,\n                                            \"args\": [],\n                                            \"print\": false,\n                                            \"enabled\": true,\n                                            \"selected\": false,\n                                            \"selectGeom\": false,\n                                            \"hasError\": false\n                                        },\n                                        {\n                                            \"type\": 0,\n                                            \"ID\": \"prod-synnsin0frf\",\n                                            \"enabled\": true,\n                                            \"print\": false,\n                                            \"argCount\": 2,\n                                            \"args\": [\n                                                {\n                                                    \"name\": \"var_name\",\n                                                    \"value\": \"vec1\",\n                                                    \"invalidVar\": false,\n                                                    \"jsValue\": \"vec1_\",\n                                                    \"linked\": false\n                                                },\n                                                {\n                                                    \"name\": \"value\",\n                                                    \"value\": \"v1\",\n                                                    \"linked\": false,\n                                                    \"jsValue\": \"v1_\",\n                                                    \"usedVars\": [\n                                                        \"v1\"\n                                                    ],\n                                                    \"invalidVar\": false\n                                                }\n                                            ],\n                                            \"selected\": false,\n                                            \"variable\": \"vec1\",\n                                            \"hasError\": false\n                                        },\n                                        {\n                                            \"type\": 1,\n                                            \"ID\": \"prod-v99mps330gr\",\n                                            \"enabled\": true,\n                                            \"print\": false,\n                                            \"argCount\": 1,\n                                            \"args\": [\n                                                {\n                                                    \"name\": \"condition\",\n                                                    \"value\": \"vec1 == null\",\n                                                    \"jsValue\": \"vec1_ == null\",\n                                                    \"usedVars\": [\n                                                        \"vec1\"\n                                                    ],\n                                                    \"invalidVar\": false,\n                                                    \"linked\": false\n                                                }\n                                            ],\n                                            \"children\": [\n                                                {\n                                                    \"type\": 13,\n                                                    \"ID\": \"\",\n                                                    \"parent\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2\",\n                                                    \"meta\": {\n                                                        \"name\": \"\",\n                                                        \"module\": \"\"\n                                                    },\n                                                    \"argCount\": 0,\n                                                    \"args\": [],\n                                                    \"print\": false,\n                                                    \"enabled\": true,\n                                                    \"selected\": false,\n                                                    \"selectGeom\": false,\n                                                    \"hasError\": false\n                                                },\n                                                {\n                                                    \"type\": 0,\n                                                    \"ID\": \"prod-53c6o285vyg\",\n                                                    \"enabled\": true,\n                                                    \"print\": false,\n                                                    \"argCount\": 2,\n                                                    \"args\": [\n                                                        {\n                                                            \"name\": \"var_name\",\n                                                            \"value\": \"equal\",\n                                                            \"invalidVar\": false,\n                                                            \"jsValue\": \"equal_\",\n                                                            \"linked\": false\n                                                        },\n                                                        {\n                                                            \"name\": \"value\",\n                                                            \"value\": \"true\",\n                                                            \"linked\": false,\n                                                            \"jsValue\": \"true\",\n                                                            \"usedVars\": [],\n                                                            \"invalidVar\": false\n                                                        }\n                                                    ],\n                                                    \"selected\": false,\n                                                    \"variable\": \"equal\",\n                                                    \"hasError\": false,\n                                                    \"selectGeom\": false,\n                                                    \"parent\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2\"\n                                                },\n                                                {\n                                                    \"type\": 14,\n                                                    \"ID\": \"prod-kl4z58b1nqj\",\n                                                    \"enabled\": true,\n                                                    \"print\": false,\n                                                    \"argCount\": 1,\n                                                    \"args\": [\n                                                        {\n                                                            \"name\": \"comment\",\n                                                            \"value\": \"Creating a random vector to cross with edge vector\",\n                                                            \"linked\": false\n                                                        }\n                                                    ],\n                                                    \"selected\": false,\n                                                    \"hasError\": false,\n                                                    \"selectGeom\": false,\n                                                    \"parent\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2\"\n                                                },\n                                                {\n                                                    \"type\": 0,\n                                                    \"ID\": \"prod-twmzoja3hq9\",\n                                                    \"enabled\": true,\n                                                    \"print\": false,\n                                                    \"argCount\": 2,\n                                                    \"args\": [\n                                                        {\n                                                            \"name\": \"var_name\",\n                                                            \"value\": \"anyvec\",\n                                                            \"invalidVar\": false,\n                                                            \"jsValue\": \"anyvec_\",\n                                                            \"linked\": false\n                                                        },\n                                                        {\n                                                            \"name\": \"value\",\n                                                            \"value\": \"null\",\n                                                            \"linked\": false,\n                                                            \"jsValue\": \"null\",\n                                                            \"usedVars\": [],\n                                                            \"invalidVar\": false\n                                                        }\n                                                    ],\n                                                    \"selected\": false,\n                                                    \"variable\": \"anyvec\",\n                                                    \"hasError\": false,\n                                                    \"selectGeom\": false,\n                                                    \"parent\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2\"\n                                                },\n                                                {\n                                                    \"type\": 5,\n                                                    \"ID\": \"prod-9u9oxurnss\",\n                                                    \"enabled\": true,\n                                                    \"print\": false,\n                                                    \"argCount\": 1,\n                                                    \"args\": [\n                                                        {\n                                                            \"name\": \"condition\",\n                                                            \"value\": \"equal\",\n                                                            \"jsValue\": \"equal_\",\n                                                            \"usedVars\": [\n                                                                \"equal\"\n                                                            ],\n                                                            \"invalidVar\": false,\n                                                            \"linked\": false\n                                                        }\n                                                    ],\n                                                    \"children\": [\n                                                        {\n                                                            \"type\": 13,\n                                                            \"ID\": \"prod-pt2v5p98ln8\",\n                                                            \"parent\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2~children~4\",\n                                                            \"meta\": {\n                                                                \"name\": \"\",\n                                                                \"module\": \"\"\n                                                            },\n                                                            \"argCount\": 0,\n                                                            \"args\": [],\n                                                            \"print\": false,\n                                                            \"enabled\": true,\n                                                            \"selected\": false,\n                                                            \"selectGeom\": false,\n                                                            \"hasError\": false\n                                                        },\n                                                        {\n                                                            \"type\": 14,\n                                                            \"parent\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2~children~4\",\n                                                            \"ID\": \"prod-fm8l1mmj7ws\",\n                                                            \"enabled\": true,\n                                                            \"print\": false,\n                                                            \"argCount\": 1,\n                                                            \"args\": [\n                                                                {\n                                                                    \"name\": \"comment\",\n                                                                    \"value\": \"There's a very low chance for both vectors to be equal, but it's still necessary to check.\",\n                                                                    \"linked\": false\n                                                                }\n                                                            ],\n                                                            \"selected\": false,\n                                                            \"hasError\": false,\n                                                            \"selectGeom\": false\n                                                        },\n                                                        {\n                                                            \"type\": 14,\n                                                            \"parent\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2~children~4\",\n                                                            \"ID\": \"prod-ixto45ex0m\",\n                                                            \"enabled\": true,\n                                                            \"print\": false,\n                                                            \"argCount\": 1,\n                                                            \"args\": [\n                                                                {\n                                                                    \"name\": \"comment\",\n                                                                    \"value\": \"if unitised anyvec is equal to unitised edgevec, randomise a new anyvec\",\n                                                                    \"linked\": false\n                                                                }\n                                                            ],\n                                                            \"selected\": false,\n                                                            \"hasError\": false,\n                                                            \"selectGeom\": false\n                                                        },\n                                                        {\n                                                            \"type\": 0,\n                                                            \"parent\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2~children~4\",\n                                                            \"ID\": \"prod-25nypfowfdaj\",\n                                                            \"enabled\": true,\n                                                            \"print\": false,\n                                                            \"argCount\": 2,\n                                                            \"args\": [\n                                                                {\n                                                                    \"name\": \"var_name\",\n                                                                    \"value\": \"anyvec\",\n                                                                    \"invalidVar\": false,\n                                                                    \"jsValue\": \"anyvec_\",\n                                                                    \"linked\": false\n                                                                },\n                                                                {\n                                                                    \"name\": \"value\",\n                                                                    \"value\": \"[rand(-1, 1), rand(-1, 1), rand(-1, 1)]\",\n                                                                    \"linked\": false,\n                                                                    \"jsValue\": \"[rand(-1, 1), rand(-1, 1), rand(-1, 1)]\",\n                                                                    \"usedVars\": [],\n                                                                    \"invalidVar\": false\n                                                                }\n                                                            ],\n                                                            \"selected\": false,\n                                                            \"variable\": \"anyvec\",\n                                                            \"hasError\": false,\n                                                            \"selectGeom\": false\n                                                        },\n                                                        {\n                                                            \"type\": 1,\n                                                            \"parent\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2~children~4\",\n                                                            \"ID\": \"prod-7itzyict42e\",\n                                                            \"enabled\": true,\n                                                            \"print\": false,\n                                                            \"argCount\": 1,\n                                                            \"args\": [\n                                                                {\n                                                                    \"name\": \"condition\",\n                                                                    \"value\": \"!vecEqual(vecNorm(anyvec), vecNorm(norm), 0) && !vecEqual(vecRev(vecNorm(anyvec)), vecNorm(norm), 0)\",\n                                                                    \"linked\": false,\n                                                                    \"jsValue\": \"!vecEqual(vecNorm(anyvec_), vecNorm(norm_), 0) && !vecEqual(vecRev(vecNorm(anyvec_)), vecNorm(norm_), 0)\",\n                                                                    \"invalidVar\": false,\n                                                                    \"usedVars\": [\n                                                                        \"norm\",\n                                                                        \"anyvec\"\n                                                                    ]\n                                                                }\n                                                            ],\n                                                            \"children\": [\n                                                                {\n                                                                    \"type\": 13,\n                                                                    \"ID\": \"prod-dx46h948nui\",\n                                                                    \"parent\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2~children~4~children~4\",\n                                                                    \"meta\": {\n                                                                        \"name\": \"\",\n                                                                        \"module\": \"\"\n                                                                    },\n                                                                    \"argCount\": 0,\n                                                                    \"args\": [],\n                                                                    \"print\": false,\n                                                                    \"enabled\": true,\n                                                                    \"selected\": false,\n                                                                    \"selectGeom\": false,\n                                                                    \"hasError\": false\n                                                                },\n                                                                {\n                                                                    \"type\": 0,\n                                                                    \"parent\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2~children~4~children~4\",\n                                                                    \"ID\": \"prod-19xceruujki\",\n                                                                    \"enabled\": true,\n                                                                    \"print\": false,\n                                                                    \"argCount\": 2,\n                                                                    \"args\": [\n                                                                        {\n                                                                            \"name\": \"var_name\",\n                                                                            \"value\": \"equal\",\n                                                                            \"invalidVar\": false,\n                                                                            \"jsValue\": \"equal_\",\n                                                                            \"linked\": false\n                                                                        },\n                                                                        {\n                                                                            \"name\": \"value\",\n                                                                            \"value\": \"false\",\n                                                                            \"linked\": false,\n                                                                            \"jsValue\": \"false\",\n                                                                            \"usedVars\": [],\n                                                                            \"invalidVar\": false\n                                                                        }\n                                                                    ],\n                                                                    \"selected\": false,\n                                                                    \"variable\": \"equal\",\n                                                                    \"hasError\": false,\n                                                                    \"selectGeom\": false\n                                                                }\n                                                            ],\n                                                            \"hasError\": false,\n                                                            \"selected\": false,\n                                                            \"selectGeom\": false\n                                                        }\n                                                    ],\n                                                    \"selected\": false,\n                                                    \"hasError\": false,\n                                                    \"selectGeom\": false,\n                                                    \"parent\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2\"\n                                                },\n                                                {\n                                                    \"type\": 0,\n                                                    \"ID\": \"prod-e5g5n26rrev\",\n                                                    \"enabled\": true,\n                                                    \"print\": false,\n                                                    \"argCount\": 2,\n                                                    \"args\": [\n                                                        {\n                                                            \"name\": \"var_name\",\n                                                            \"value\": \"vec1\",\n                                                            \"invalidVar\": false,\n                                                            \"jsValue\": \"vec1_\",\n                                                            \"linked\": false\n                                                        },\n                                                        {\n                                                            \"name\": \"value\",\n                                                            \"value\": \"vecCross(norm, anyvec)\",\n                                                            \"linked\": false,\n                                                            \"jsValue\": \"vecCross(norm_, anyvec_)\",\n                                                            \"usedVars\": [\n                                                                \"norm\",\n                                                                \"anyvec\"\n                                                            ],\n                                                            \"invalidVar\": false\n                                                        }\n                                                    ],\n                                                    \"selected\": false,\n                                                    \"variable\": \"vec1\",\n                                                    \"hasError\": false,\n                                                    \"selectGeom\": false,\n                                                    \"parent\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~2\"\n                                                }\n                                            ],\n                                            \"selected\": false,\n                                            \"hasError\": false\n                                        },\n                                        {\n                                            \"type\": 0,\n                                            \"ID\": \"prod-rrwjxx9fof\",\n                                            \"enabled\": true,\n                                            \"print\": false,\n                                            \"argCount\": 2,\n                                            \"args\": [\n                                                {\n                                                    \"name\": \"var_name\",\n                                                    \"value\": \"v2\",\n                                                    \"linked\": false,\n                                                    \"invalidVar\": false,\n                                                    \"jsValue\": \"v2_\"\n                                                },\n                                                {\n                                                    \"name\": \"value\",\n                                                    \"value\": \"vecCross(norm, vec1)\",\n                                                    \"linked\": false,\n                                                    \"jsValue\": \"vecCross(norm_, vec1_)\",\n                                                    \"invalidVar\": false,\n                                                    \"usedVars\": [\n                                                        \"norm\",\n                                                        \"vec1\"\n                                                    ]\n                                                }\n                                            ],\n                                            \"selected\": false,\n                                            \"variable\": \"v2\",\n                                            \"hasError\": false,\n                                            \"selectGeom\": false\n                                        },\n                                        {\n                                            \"type\": 0,\n                                            \"ID\": \"prod-fbxbzkgor19\",\n                                            \"enabled\": true,\n                                            \"print\": false,\n                                            \"argCount\": 2,\n                                            \"args\": [\n                                                {\n                                                    \"name\": \"var_name\",\n                                                    \"value\": \"pln\",\n                                                    \"invalidVar\": false,\n                                                    \"jsValue\": \"pln_\",\n                                                    \"linked\": false\n                                                },\n                                                {\n                                                    \"name\": \"value\",\n                                                    \"value\": \"[coord, vec1, v2]\",\n                                                    \"linked\": false,\n                                                    \"jsValue\": \"[coord_, vec1_, v2_]\",\n                                                    \"usedVars\": [\n                                                        \"coord\",\n                                                        \"vec1\",\n                                                        \"v2\"\n                                                    ],\n                                                    \"invalidVar\": false\n                                                }\n                                            ],\n                                            \"selected\": false,\n                                            \"variable\": \"pln\",\n                                            \"hasError\": false,\n                                            \"selectGeom\": false\n                                        },\n                                        {\n                                            \"type\": 11,\n                                            \"ID\": \"Return\",\n                                            \"meta\": {\n                                                \"name\": \"\",\n                                                \"module\": \"\"\n                                            },\n                                            \"argCount\": 2,\n                                            \"args\": [\n                                                {\n                                                    \"name\": \"__model__\",\n                                                    \"value\": \"\",\n                                                    \"jsValue\": \"\",\n                                                    \"linked\": false\n                                                },\n                                                {\n                                                    \"name\": \"value\",\n                                                    \"value\": \"pln\",\n                                                    \"jsValue\": \"pln_\",\n                                                    \"linked\": false,\n                                                    \"usedVars\": [\n                                                        \"pln\"\n                                                    ],\n                                                    \"invalidVar\": false\n                                                }\n                                            ],\n                                            \"print\": false,\n                                            \"enabled\": true,\n                                            \"selected\": false,\n                                            \"selectGeom\": false,\n                                            \"hasError\": false\n                                        }\n                                    ],\n                                    \"state\": {\n                                        \"procedure\": []\n                                    },\n                                    \"input\": \"~flowchart~nodes~0~output~edges~0~target\",\n                                    \"output\": {\n                                        \"name\": \"output\",\n                                        \"type\": 1,\n                                        \"edges\": [],\n                                        \"meta\": {\n                                            \"mode\": 0\n                                        },\n                                        \"parentNode\": \"~flowchart~nodes~0~output~edges~0~target~parentNode\"\n                                    },\n                                    \"hasError\": false,\n                                    \"hasExecuted\": true\n                                }\n                            },\n                            \"selected\": false\n                        }\n                    ],\n                    \"meta\": {\n                        \"mode\": 0\n                    },\n                    \"parentNode\": \"~flowchart~nodes~0\"\n                },\n                \"hasError\": false,\n                \"hasExecuted\": true\n            },\n            \"~flowchart~nodes~0~output~edges~0~target~parentNode\"\n        ],\n        \"edges\": [\n            \"~flowchart~nodes~0~output~edges~0\"\n        ],\n        \"functions\": [],\n        \"ordered\": true,\n        \"last_updated\": \"2019-09-12T07:29:43.401Z\",\n        \"returnDescription\": \"Plane, with specified normal, center coordinate, and \\\"x\\\" vector\"\n    },\n    \"version\": 1,\n    \"settings\": \"{\\\"normals\\\":{\\\"show\\\":false,\\\"size\\\":5},\\\"axes\\\":{\\\"show\\\":false,\\\"size\\\":50},\\\"grid\\\":{\\\"show\\\":false,\\\"size\\\":500},\\\"positions\\\":{\\\"show\\\":false,\\\"size\\\":0.5},\\\"tjs_summary\\\":{\\\"show\\\":false},\\\"gi_summary\\\":{\\\"show\\\":false},\\\"wireframe\\\":{\\\"show\\\":false},\\\"camera\\\":{\\\"pos\\\":{\\\"x\\\":-1.5785792179796778,\\\"y\\\":0.09456474057220998,\\\"z\\\":13.77884634257454},\\\"pos_x\\\":-1.5785792179796778,\\\"pos_y\\\":0.09456474057220998,\\\"pos_z\\\":13.77884634257454,\\\"target\\\":{\\\"x\\\":0.012193679809570312,\\\"y\\\":-0.11201047897338867,\\\"z\\\":0}},\\\"colors\\\":{\\\"viewer_bg\\\":\\\"#E6E6E6\\\",\\\"position\\\":\\\"#000000\\\",\\\"position_s\\\":\\\"#0033FF\\\",\\\"vertex_s\\\":\\\"#FFCC00\\\",\\\"face_f\\\":\\\"#FFFFFF\\\",\\\"face_f_s\\\":\\\"#4949BD\\\",\\\"face_b\\\":\\\"#DDDDDD\\\",\\\"face_b_s\\\":\\\"#00006D\\\"},\\\"ambient_light\\\":{\\\"show\\\":true,\\\"color\\\":\\\"#FFFFFF\\\",\\\"intensity\\\":0.5},\\\"hemisphere_light\\\":{\\\"show\\\":true,\\\"helper\\\":false,\\\"skyColor\\\":\\\"#FFFFFF\\\",\\\"groundColor\\\":\\\"#FFFFFF\\\",\\\"intensity\\\":0.5},\\\"directional_light\\\":{\\\"show\\\":false,\\\"helper\\\":false,\\\"color\\\":\\\"#FFFFFF\\\",\\\"intensity\\\":1,\\\"shadow\\\":true,\\\"shadowSize\\\":4,\\\"azimuth\\\":90,\\\"altitude\\\":45,\\\"distance\\\":10000},\\\"ground\\\":{\\\"show\\\":false,\\\"width\\\":1000,\\\"length\\\":1000,\\\"height\\\":-0.5,\\\"color\\\":\\\"#FFFFFF\\\",\\\"shininess\\\":0},\\\"select\\\":{\\\"selector\\\":{\\\"id\\\":8,\\\"name\\\":\\\"Polygons\\\"},\\\"tab\\\":\\\"0\\\"},\\\"version\\\":\\\"0.4.38\\\"}\"\n}",
+                "args": [
+                    {
+                        "name": "norm",
+                        "value": "e_vec",
+                        "type": 0
+                    },
+                    {
+                        "name": "coord",
+                        "value": "c",
+                        "type": 0
+                    },
+                    {
+                        "name": "v1",
+                        "value": "null",
+                        "type": 0
+                    }
+                ],
+                "argCount": 3,
+                "hasReturn": true
+            }
+        ],
+        "ordered": true,
+        "subFunctions": [],
+        "last_updated": "2019-10-02T04:32:44.199Z"
+    },
+    "version": 3,
+    "settings": "{\"normals\":{\"show\":false,\"size\":5},\"axes\":{\"show\":true,\"size\":50},\"grid\":{\"show\":true,\"size\":500},\"positions\":{\"show\":true,\"size\":0.5},\"tjs_summary\":{\"show\":false},\"gi_summary\":{\"show\":false},\"wireframe\":{\"show\":false},\"camera\":{\"pos\":{\"x\":-80,\"y\":-80,\"z\":80},\"pos_x\":-80,\"pos_y\":-80,\"pos_z\":80,\"target\":{\"x\":0,\"y\":0,\"z\":0}},\"colors\":{\"viewer_bg\":\"#E6E6E6\",\"position\":\"#000000\",\"position_s\":\"#0033FF\",\"vertex_s\":\"#FFCC00\",\"face_f\":\"#FFFFFF\",\"face_f_s\":\"#4949BD\",\"face_b\":\"#DDDDDD\",\"face_b_s\":\"#00006D\"},\"ambient_light\":{\"show\":true,\"color\":\"#FFFFFF\",\"intensity\":0.5},\"hemisphere_light\":{\"show\":true,\"helper\":false,\"skyColor\":\"#FFFFFF\",\"groundColor\":\"#FFFFFF\",\"intensity\":0.5},\"directional_light\":{\"show\":false,\"helper\":false,\"color\":\"#FFFFFF\",\"intensity\":1,\"shadow\":true,\"shadowSize\":4,\"azimuth\":90,\"altitude\":45,\"distance\":10000},\"ground\":{\"show\":false,\"width\":1000,\"length\":1000,\"height\":-0.5,\"color\":\"#FFFFFF\",\"shininess\":0},\"select\":{\"selector\":{\"id\":3,\"name\":\"Edges\"},\"tab\":\"2\"},\"version\":\"0.5.1\"}"
+}
