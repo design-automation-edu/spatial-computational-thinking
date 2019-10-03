@@ -1,5 +1,5 @@
 {
-    "name": "Differentiated_Tower_(3)",
+    "name": "Differentiated_Tower",
     "author": "new_user",
     "flowchart": {
         "id": "1628fce6-69f5-fe45-ab50-ec8a7374928b",
@@ -14,7 +14,7 @@
         "nodes": [
             {
                 "name": "Start",
-                "id": "node_o3meu1fjrer",
+                "id": "node_3ybzaw34q5q",
                 "position": {
                     "x": 5340,
                     "y": 4760
@@ -245,7 +245,7 @@
                             },
                             {
                                 "name": "__input__",
-                                "value": true
+                                "value": false
                             }
                         ],
                         "selected": false,
@@ -283,7 +283,7 @@
                                 },
                                 "parentNode": {
                                     "name": "Mass",
-                                    "id": "node_ikv0ef1btxm",
+                                    "id": "node_ox8dqvaxzu",
                                     "position": {
                                         "x": 5340,
                                         "y": 4860
@@ -2710,7 +2710,7 @@
                                                     },
                                                     "parentNode": {
                                                         "name": "Visualise labels",
-                                                        "id": "node_nl5aj1s2o7",
+                                                        "id": "node_qslikjp9viq",
                                                         "position": {
                                                             "x": 5560,
                                                             "y": 4860
@@ -2946,7 +2946,7 @@
                                                     },
                                                     "parentNode": {
                                                         "name": "Windows: alternate [4]",
-                                                        "id": "node_hf56ds7ldvp",
+                                                        "id": "node_tkupbtxs5a",
                                                         "position": {
                                                             "x": 5340,
                                                             "y": 4980
@@ -3960,7 +3960,7 @@
                                                                         },
                                                                         "parentNode": {
                                                                             "name": "Balcony: [3]s and [2]s",
-                                                                            "id": "node_nd577xojw8p",
+                                                                            "id": "node_hyg357txcr9",
                                                                             "position": {
                                                                                 "x": 5340,
                                                                                 "y": 5080
@@ -5512,7 +5512,7 @@
                                                                                             },
                                                                                             "parentNode": {
                                                                                                 "name": "Access:\n[8]",
-                                                                                                "id": "node_r9hz3v7973i",
+                                                                                                "id": "node_7n300obtf3",
                                                                                                 "position": {
                                                                                                     "x": 5340,
                                                                                                     "y": 5200
@@ -6257,7 +6257,7 @@
                                                                                                                 },
                                                                                                                 "parentNode": {
                                                                                                                     "name": "Render",
-                                                                                                                    "id": "node_715kpl188v",
+                                                                                                                    "id": "node_b59qjxjevi7",
                                                                                                                     "position": {
                                                                                                                         "x": 5340,
                                                                                                                         "y": 5320
@@ -6674,7 +6674,93 @@
                                                                                                                     "output": {
                                                                                                                         "name": "output",
                                                                                                                         "type": 1,
-                                                                                                                        "edges": [],
+                                                                                                                        "edges": [
+                                                                                                                            {
+                                                                                                                                "source": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~1~target~parentNode~output~edges~0~target~parentNode~output~edges~0~target~parentNode~output~edges~0~target~parentNode~output",
+                                                                                                                                "target": {
+                                                                                                                                    "name": "input",
+                                                                                                                                    "type": 0,
+                                                                                                                                    "edges": [
+                                                                                                                                        "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~1~target~parentNode~output~edges~0~target~parentNode~output~edges~0~target~parentNode~output~edges~0~target~parentNode~output~edges~0"
+                                                                                                                                    ],
+                                                                                                                                    "meta": {
+                                                                                                                                        "mode": 0,
+                                                                                                                                        "opts": {}
+                                                                                                                                    },
+                                                                                                                                    "parentNode": {
+                                                                                                                                        "name": "End",
+                                                                                                                                        "id": "node_a4nd20ok58",
+                                                                                                                                        "position": {
+                                                                                                                                            "x": 5340,
+                                                                                                                                            "y": 5440
+                                                                                                                                        },
+                                                                                                                                        "enabled": true,
+                                                                                                                                        "type": "end",
+                                                                                                                                        "procedure": [
+                                                                                                                                            {
+                                                                                                                                                "type": 13,
+                                                                                                                                                "ID": "",
+                                                                                                                                                "meta": {
+                                                                                                                                                    "name": "",
+                                                                                                                                                    "module": ""
+                                                                                                                                                },
+                                                                                                                                                "argCount": 0,
+                                                                                                                                                "args": [],
+                                                                                                                                                "print": false,
+                                                                                                                                                "enabled": true,
+                                                                                                                                                "selected": false,
+                                                                                                                                                "selectGeom": false,
+                                                                                                                                                "hasError": false
+                                                                                                                                            },
+                                                                                                                                            {
+                                                                                                                                                "type": 11,
+                                                                                                                                                "ID": "Return",
+                                                                                                                                                "meta": {
+                                                                                                                                                    "name": "",
+                                                                                                                                                    "module": ""
+                                                                                                                                                },
+                                                                                                                                                "argCount": 2,
+                                                                                                                                                "args": [
+                                                                                                                                                    {
+                                                                                                                                                        "name": "__model__",
+                                                                                                                                                        "value": "",
+                                                                                                                                                        "jsValue": "",
+                                                                                                                                                        "linked": false
+                                                                                                                                                    },
+                                                                                                                                                    {
+                                                                                                                                                        "name": "value",
+                                                                                                                                                        "value": "",
+                                                                                                                                                        "jsValue": "",
+                                                                                                                                                        "linked": false
+                                                                                                                                                    }
+                                                                                                                                                ],
+                                                                                                                                                "print": false,
+                                                                                                                                                "enabled": true,
+                                                                                                                                                "selected": false,
+                                                                                                                                                "selectGeom": false,
+                                                                                                                                                "hasError": false
+                                                                                                                                            }
+                                                                                                                                        ],
+                                                                                                                                        "state": {
+                                                                                                                                            "procedure": []
+                                                                                                                                        },
+                                                                                                                                        "input": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~1~target~parentNode~output~edges~0~target~parentNode~output~edges~0~target~parentNode~output~edges~0~target~parentNode~output~edges~0~target",
+                                                                                                                                        "output": {
+                                                                                                                                            "name": "output",
+                                                                                                                                            "type": 1,
+                                                                                                                                            "edges": [],
+                                                                                                                                            "meta": {
+                                                                                                                                                "mode": 0
+                                                                                                                                            },
+                                                                                                                                            "parentNode": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~1~target~parentNode~output~edges~0~target~parentNode~output~edges~0~target~parentNode~output~edges~0~target~parentNode~output~edges~0~target~parentNode"
+                                                                                                                                        },
+                                                                                                                                        "hasError": false,
+                                                                                                                                        "hasExecuted": true
+                                                                                                                                    }
+                                                                                                                                },
+                                                                                                                                "selected": false
+                                                                                                                            }
+                                                                                                                        ],
                                                                                                                         "meta": {
                                                                                                                             "mode": 0
                                                                                                                         },
@@ -6749,85 +6835,7 @@
             "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~1~target~parentNode~output~edges~0~target~parentNode",
             "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~1~target~parentNode~output~edges~0~target~parentNode~output~edges~0~target~parentNode",
             "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~1~target~parentNode~output~edges~0~target~parentNode~output~edges~0~target~parentNode~output~edges~0~target~parentNode",
-            {
-                "name": "End",
-                "id": "node_47ddnen83d9",
-                "position": {
-                    "x": 5340,
-                    "y": 5440
-                },
-                "enabled": false,
-                "type": "end",
-                "procedure": [
-                    {
-                        "type": 13,
-                        "ID": "",
-                        "meta": {
-                            "name": "",
-                            "module": ""
-                        },
-                        "argCount": 0,
-                        "args": [],
-                        "print": false,
-                        "enabled": true,
-                        "selected": false,
-                        "selectGeom": false,
-                        "hasError": false
-                    },
-                    {
-                        "type": 11,
-                        "ID": "Return",
-                        "meta": {
-                            "name": "",
-                            "module": ""
-                        },
-                        "argCount": 2,
-                        "args": [
-                            {
-                                "name": "__model__",
-                                "value": "",
-                                "jsValue": "",
-                                "linked": false
-                            },
-                            {
-                                "name": "value",
-                                "value": "",
-                                "jsValue": "",
-                                "linked": false
-                            }
-                        ],
-                        "print": false,
-                        "enabled": true,
-                        "selected": false,
-                        "selectGeom": false,
-                        "hasError": false
-                    }
-                ],
-                "state": {
-                    "procedure": []
-                },
-                "input": {
-                    "name": "input",
-                    "type": 0,
-                    "edges": [],
-                    "meta": {
-                        "mode": 0,
-                        "opts": {}
-                    },
-                    "parentNode": "~flowchart~nodes~7"
-                },
-                "output": {
-                    "name": "output",
-                    "type": 1,
-                    "edges": [],
-                    "meta": {
-                        "mode": 0
-                    },
-                    "parentNode": "~flowchart~nodes~7"
-                },
-                "hasError": false,
-                "hasExecuted": false
-            }
+            "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~1~target~parentNode~output~edges~0~target~parentNode~output~edges~0~target~parentNode~output~edges~0~target~parentNode~output~edges~0~target~parentNode"
         ],
         "edges": [
             "~flowchart~nodes~0~output~edges~0",
@@ -6835,11 +6843,12 @@
             "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~1",
             "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~1~target~parentNode~output~edges~0~target~parentNode~output~edges~0",
             "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~1~target~parentNode~output~edges~0~target~parentNode~output~edges~0~target~parentNode~output~edges~0",
-            "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~1~target~parentNode~output~edges~0"
+            "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~1~target~parentNode~output~edges~0",
+            "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~1~target~parentNode~output~edges~0~target~parentNode~output~edges~0~target~parentNode~output~edges~0~target~parentNode~output~edges~0"
         ],
         "functions": [],
         "ordered": true,
-        "last_updated": "2019-10-03T04:54:12.488Z"
+        "last_updated": "2019-10-03T04:57:37.627Z"
     },
     "version": 1,
     "settings": "{\"normals\":{\"show\":false,\"size\":5},\"axes\":{\"show\":true,\"size\":50},\"grid\":{\"show\":true,\"size\":500},\"positions\":{\"show\":true,\"size\":0.5},\"tjs_summary\":{\"show\":false},\"gi_summary\":{\"show\":false},\"wireframe\":{\"show\":false},\"camera\":{\"pos\":{\"x\":-80,\"y\":-80,\"z\":80},\"pos_x\":-80,\"pos_y\":-80,\"pos_z\":80,\"target\":{\"x\":0,\"y\":0,\"z\":0}},\"colors\":{\"viewer_bg\":\"#E6E6E6\",\"position\":\"#000000\",\"position_s\":\"#0033FF\",\"vertex_s\":\"#FFCC00\",\"face_f\":\"#FFFFFF\",\"face_f_s\":\"#4949BD\",\"face_b\":\"#DDDDDD\",\"face_b_s\":\"#00006D\"},\"ambient_light\":{\"show\":true,\"color\":\"#FFFFFF\",\"intensity\":0.5},\"hemisphere_light\":{\"show\":true,\"helper\":false,\"skyColor\":\"#FFFFFF\",\"groundColor\":\"#FFFFFF\",\"intensity\":0.5},\"directional_light\":{\"show\":false,\"helper\":false,\"color\":\"#FFFFFF\",\"intensity\":1,\"shadow\":true,\"shadowSize\":4,\"azimuth\":90,\"altitude\":45,\"distance\":10000},\"ground\":{\"show\":false,\"width\":1000,\"length\":1000,\"height\":-0.5,\"color\":\"#FFFFFF\",\"shininess\":0},\"select\":{\"selector\":{\"id\":8,\"name\":\"Polygons\"},\"tab\":\"0\"},\"version\":\"0.5.1\"}"
