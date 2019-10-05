@@ -1,7 +1,6 @@
 {
-    "name": "Al Bahar Tower facade",
+    "name": "Al_Bahar_Tower_facade",
     "author": "new_user",
-    "version": 1,
     "flowchart": {
         "id": "d1083cc4-e664-681b-03f2-a0be681962b8",
         "name": "Al Bahar Tower facade",
@@ -15,7 +14,7 @@
         "nodes": [
             {
                 "name": "Start",
-                "id": "node_2glsjsdmphf",
+                "id": "node_61mz04euw8q",
                 "position": {
                     "x": 5340,
                     "y": 5000
@@ -70,7 +69,7 @@
                                 },
                                 "parentNode": {
                                     "name": "Node",
-                                    "id": "node_7wsvkga7y2f",
+                                    "id": "node_e2c9vl4n0h",
                                     "position": {
                                         "x": 5340,
                                         "y": 5200
@@ -116,7 +115,7 @@
                                                     },
                                                     "parentNode": {
                                                         "name": "End",
-                                                        "id": "node_248g9j8rorl",
+                                                        "id": "node_9b8wg7q8fh8",
                                                         "position": {
                                                             "x": 5340,
                                                             "y": 5400
@@ -503,9 +502,9 @@
                                                                             },
                                                                             {
                                                                                 "name": "value",
-                                                                                "value": "abs(vecDot(rand_vec, norm))",
+                                                                                "value": "vecDot(rand_vec, norm)",
                                                                                 "linked": false,
-                                                                                "jsValue": "abs(vecDot(rand_vec_, norm_))",
+                                                                                "jsValue": "vecDot(rand_vec_, norm_)",
                                                                                 "usedVars": [
                                                                                     "norm",
                                                                                     "rand_vec"
@@ -1051,7 +1050,8 @@
         ],
         "functions": [],
         "ordered": true,
-        "last_updated": "2019-09-30T03:12:47.076Z"
+        "last_updated": "2019-10-05T03:37:06.030Z"
     },
-    "settings": "{\"normals\":{\"show\":false,\"size\":5},\"axes\":{\"show\":true,\"size\":50},\"grid\":{\"show\":true,\"size\":500},\"positions\":{\"show\":true,\"size\":0.5},\"tjs_summary\":{\"show\":false},\"gi_summary\":{\"show\":false},\"wireframe\":{\"show\":false},\"camera\":{\"pos\":{\"x\":-80,\"y\":-80,\"z\":80},\"pos_x\":-80,\"pos_y\":-80,\"pos_z\":80,\"target\":{\"x\":0,\"y\":0,\"z\":0}},\"colors\":{\"viewer_bg\":\"#E6E6E6\",\"position\":\"#000000\",\"position_s\":\"#0033FF\",\"vertex_s\":\"#FFCC00\",\"face_f\":\"#FFFFFF\",\"face_f_s\":\"#4949BD\",\"face_b\":\"#DDDDDD\",\"face_b_s\":\"#00006D\"},\"ambient_light\":{\"show\":true,\"color\":\"#FFFFFF\",\"intensity\":0.5},\"hemisphere_light\":{\"show\":true,\"helper\":false,\"skyColor\":\"#FFFFFF\",\"groundColor\":\"#FFFFFF\",\"intensity\":0.5},\"directional_light\":{\"show\":false,\"helper\":false,\"color\":\"#FFFFFF\",\"intensity\":1,\"shadow\":true,\"shadowSize\":4,\"azimuth\":90,\"altitude\":45,\"distance\":10000},\"ground\":{\"show\":false,\"width\":1000,\"length\":1000,\"height\":-0.5,\"color\":\"#FFFFFF\",\"shininess\":0},\"select\":{\"selector\":{\"id\":5,\"name\":\"Faces\"},\"tab\":\"0\"},\"version\":\"0.5.1\"}"
+    "version": 1,
+    "settings": "{\"normals\":{\"show\":false,\"size\":5},\"axes\":{\"show\":true,\"size\":50},\"grid\":{\"show\":true,\"size\":500},\"positions\":{\"show\":true,\"size\":0.5},\"tjs_summary\":{\"show\":false},\"gi_summary\":{\"show\":false},\"wireframe\":{\"show\":false},\"camera\":{\"pos\":{\"x\":-80,\"y\":-80,\"z\":80},\"pos_x\":-80,\"pos_y\":-80,\"pos_z\":80,\"target\":{\"x\":0,\"y\":0,\"z\":0}},\"colors\":{\"viewer_bg\":\"#E6E6E6\",\"position\":\"#000000\",\"position_s\":\"#0033FF\",\"vertex_s\":\"#FFCC00\",\"face_f\":\"#FFFFFF\",\"face_f_s\":\"#4949BD\",\"face_b\":\"#DDDDDD\",\"face_b_s\":\"#00006D\"},\"ambient_light\":{\"show\":true,\"color\":\"#FFFFFF\",\"intensity\":0.5},\"hemisphere_light\":{\"show\":true,\"helper\":false,\"skyColor\":\"#FFFFFF\",\"groundColor\":\"#FFFFFF\",\"intensity\":0.5},\"directional_light\":{\"show\":false,\"helper\":false,\"color\":\"#FFFFFF\",\"intensity\":1,\"shadow\":true,\"shadowSize\":4,\"azimuth\":90,\"altitude\":45,\"distance\":10000},\"ground\":{\"show\":false,\"width\":1000,\"length\":1000,\"height\":-0.5,\"color\":\"#FFFFFF\",\"shininess\":0},\"select\":{\"selector\":{\"id\":8,\"name\":\"Polygons\"},\"tab\":\"0\"},\"version\":\"0.5.1\"}"
 }
