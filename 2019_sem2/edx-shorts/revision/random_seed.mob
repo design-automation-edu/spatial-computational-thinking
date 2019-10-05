@@ -1,0 +1,660 @@
+{
+    "name": "random_seed",
+    "author": "new_user",
+    "version": 1,
+    "flowchart": {
+        "id": "9cd49d9d-5886-2304-b4ef-057a1971d36e",
+        "name": "random_seed",
+        "description": "",
+        "language": "js",
+        "meta": {
+            "selected_nodes": [
+                0
+            ]
+        },
+        "nodes": [
+            {
+                "name": "Start",
+                "id": "node_hif92lvl01",
+                "position": {
+                    "x": 5340,
+                    "y": 5000
+                },
+                "enabled": true,
+                "type": "start",
+                "procedure": [
+                    {
+                        "type": 13,
+                        "ID": "",
+                        "meta": {
+                            "name": "",
+                            "module": ""
+                        },
+                        "argCount": 0,
+                        "args": [],
+                        "print": false,
+                        "enabled": true,
+                        "selected": false,
+                        "selectGeom": false,
+                        "hasError": false
+                    }
+                ],
+                "state": {
+                    "procedure": []
+                },
+                "input": {
+                    "name": "input",
+                    "type": 0,
+                    "edges": [],
+                    "meta": {
+                        "mode": 0,
+                        "opts": {}
+                    },
+                    "parentNode": "~flowchart~nodes~0"
+                },
+                "output": {
+                    "name": "output",
+                    "type": 1,
+                    "edges": [
+                        {
+                            "source": "~flowchart~nodes~0~output",
+                            "target": {
+                                "name": "input",
+                                "type": 0,
+                                "edges": [
+                                    "~flowchart~nodes~0~output~edges~0"
+                                ],
+                                "meta": {
+                                    "mode": 0,
+                                    "opts": {}
+                                },
+                                "parentNode": {
+                                    "name": "Node",
+                                    "id": "node_fiptoumeqfu",
+                                    "position": {
+                                        "x": 5340,
+                                        "y": 5200
+                                    },
+                                    "enabled": true,
+                                    "type": "",
+                                    "procedure": [
+                                        {
+                                            "type": 13,
+                                            "ID": "",
+                                            "meta": {
+                                                "name": "",
+                                                "module": ""
+                                            },
+                                            "argCount": 0,
+                                            "args": [],
+                                            "print": false,
+                                            "enabled": true,
+                                            "selected": false,
+                                            "selectGeom": false,
+                                            "hasError": false
+                                        }
+                                    ],
+                                    "state": {
+                                        "procedure": []
+                                    },
+                                    "input": "~flowchart~nodes~0~output~edges~0~target",
+                                    "output": {
+                                        "name": "output",
+                                        "type": 1,
+                                        "edges": [
+                                            {
+                                                "source": "~flowchart~nodes~0~output~edges~0~target~parentNode~output",
+                                                "target": {
+                                                    "name": "input",
+                                                    "type": 0,
+                                                    "edges": [
+                                                        "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0"
+                                                    ],
+                                                    "meta": {
+                                                        "mode": 0,
+                                                        "opts": {}
+                                                    },
+                                                    "parentNode": {
+                                                        "name": "End",
+                                                        "id": "node_dye0ugh1h5h",
+                                                        "position": {
+                                                            "x": 5340,
+                                                            "y": 5400
+                                                        },
+                                                        "enabled": true,
+                                                        "type": "end",
+                                                        "procedure": [
+                                                            {
+                                                                "type": 13,
+                                                                "ID": "",
+                                                                "meta": {
+                                                                    "name": "",
+                                                                    "module": ""
+                                                                },
+                                                                "argCount": 0,
+                                                                "args": [],
+                                                                "print": false,
+                                                                "enabled": true,
+                                                                "selected": false,
+                                                                "selectGeom": false,
+                                                                "hasError": false
+                                                            },
+                                                            {
+                                                                "type": 14,
+                                                                "ID": "prod-zxcqf9iu77k",
+                                                                "enabled": true,
+                                                                "print": false,
+                                                                "argCount": 1,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "comment",
+                                                                        "value": "No seed: Random number every time funtion is ran - new random number in every execution",
+                                                                        "linked": false
+                                                                    }
+                                                                ],
+                                                                "selected": false
+                                                            },
+                                                            {
+                                                                "type": 0,
+                                                                "ID": "prod-5sp29zv1yzv",
+                                                                "enabled": true,
+                                                                "print": false,
+                                                                "argCount": 2,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "var_name",
+                                                                        "value": "rand_int",
+                                                                        "invalidVar": false,
+                                                                        "jsValue": "rand_int_",
+                                                                        "linked": false
+                                                                    },
+                                                                    {
+                                                                        "name": "value",
+                                                                        "value": "randInt(0, 100)",
+                                                                        "linked": false,
+                                                                        "jsValue": "randInt(0, 100)",
+                                                                        "usedVars": [],
+                                                                        "invalidVar": false
+                                                                    }
+                                                                ],
+                                                                "selected": false,
+                                                                "variable": "rand_int",
+                                                                "hasError": false
+                                                            },
+                                                            {
+                                                                "type": 14,
+                                                                "ID": "prod-vjek04n1te",
+                                                                "enabled": true,
+                                                                "print": false,
+                                                                "argCount": 1,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "comment",
+                                                                        "value": "Seeded: Same number every time procedure is executed",
+                                                                        "linked": false
+                                                                    }
+                                                                ],
+                                                                "selected": false,
+                                                                "selectGeom": false
+                                                            },
+                                                            {
+                                                                "type": 0,
+                                                                "ID": "prod-7ksy2v4yw7q",
+                                                                "enabled": true,
+                                                                "print": false,
+                                                                "argCount": 2,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "var_name",
+                                                                        "value": "rand_int_seed",
+                                                                        "invalidVar": false,
+                                                                        "jsValue": "rand_int_seed_",
+                                                                        "linked": false
+                                                                    },
+                                                                    {
+                                                                        "name": "value",
+                                                                        "value": "randInt(0, 100, 0)",
+                                                                        "linked": false,
+                                                                        "jsValue": "randInt(0, 100, 0)",
+                                                                        "usedVars": [],
+                                                                        "invalidVar": false
+                                                                    }
+                                                                ],
+                                                                "selected": false,
+                                                                "variable": "rand_int_seed",
+                                                                "selectGeom": false,
+                                                                "hasError": false
+                                                            },
+                                                            {
+                                                                "type": 4,
+                                                                "ID": "prod-mswzb01vsx",
+                                                                "enabled": true,
+                                                                "print": false,
+                                                                "argCount": 2,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "item",
+                                                                        "value": "i",
+                                                                        "linked": false,
+                                                                        "invalidVar": false,
+                                                                        "jsValue": "i_"
+                                                                    },
+                                                                    {
+                                                                        "name": "list",
+                                                                        "value": "range(0, 10)",
+                                                                        "linked": false,
+                                                                        "jsValue": "range(0, 10)",
+                                                                        "usedVars": [],
+                                                                        "invalidVar": false
+                                                                    }
+                                                                ],
+                                                                "children": [
+                                                                    {
+                                                                        "type": 13,
+                                                                        "ID": "",
+                                                                        "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode~procedure~5",
+                                                                        "meta": {
+                                                                            "name": "",
+                                                                            "module": ""
+                                                                        },
+                                                                        "argCount": 0,
+                                                                        "args": [],
+                                                                        "print": false,
+                                                                        "enabled": true,
+                                                                        "selected": false,
+                                                                        "selectGeom": false,
+                                                                        "hasError": false
+                                                                    },
+                                                                    {
+                                                                        "type": 14,
+                                                                        "ID": "prod-ahr8o33k79",
+                                                                        "enabled": true,
+                                                                        "print": false,
+                                                                        "argCount": 1,
+                                                                        "args": [
+                                                                            {
+                                                                                "name": "comment",
+                                                                                "value": "No Seed in loop: Random number every time funtion is ran - new random number in every loop iteration",
+                                                                                "linked": false
+                                                                            }
+                                                                        ],
+                                                                        "selected": false,
+                                                                        "selectGeom": false,
+                                                                        "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode~procedure~5"
+                                                                    },
+                                                                    {
+                                                                        "type": 14,
+                                                                        "ID": "prod-y8rtdsqbrcl",
+                                                                        "enabled": true,
+                                                                        "print": false,
+                                                                        "argCount": 1,
+                                                                        "args": [
+                                                                            {
+                                                                                "name": "comment",
+                                                                                "value": "random && !order",
+                                                                                "linked": false
+                                                                            }
+                                                                        ],
+                                                                        "selected": false,
+                                                                        "selectGeom": false,
+                                                                        "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode~procedure~5"
+                                                                    },
+                                                                    {
+                                                                        "type": 0,
+                                                                        "ID": "prod-lrm94lhbd6d",
+                                                                        "enabled": true,
+                                                                        "print": false,
+                                                                        "argCount": 2,
+                                                                        "args": [
+                                                                            {
+                                                                                "name": "var_name",
+                                                                                "value": "loop_rand_int",
+                                                                                "invalidVar": false,
+                                                                                "jsValue": "loop_rand_int_",
+                                                                                "linked": false
+                                                                            },
+                                                                            {
+                                                                                "name": "value",
+                                                                                "value": "randInt(0, 100)",
+                                                                                "linked": false,
+                                                                                "jsValue": "randInt(0, 100)",
+                                                                                "usedVars": [],
+                                                                                "invalidVar": false
+                                                                            }
+                                                                        ],
+                                                                        "selected": false,
+                                                                        "variable": "loop_rand_int",
+                                                                        "selectGeom": false,
+                                                                        "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode~procedure~5",
+                                                                        "hasError": false
+                                                                    },
+                                                                    {
+                                                                        "type": 14,
+                                                                        "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode~procedure~5",
+                                                                        "ID": "prod-3482ayht7ij",
+                                                                        "enabled": true,
+                                                                        "print": false,
+                                                                        "argCount": 1,
+                                                                        "args": [
+                                                                            {
+                                                                                "name": "comment",
+                                                                                "value": "=======================================================================================================================",
+                                                                                "linked": false
+                                                                            }
+                                                                        ],
+                                                                        "selected": false,
+                                                                        "selectGeom": false
+                                                                    },
+                                                                    {
+                                                                        "type": 14,
+                                                                        "ID": "prod-3q15nmxcc9n",
+                                                                        "enabled": true,
+                                                                        "print": false,
+                                                                        "argCount": 1,
+                                                                        "args": [
+                                                                            {
+                                                                                "name": "comment",
+                                                                                "value": "Seeded in loop: Random number using iterator - new random number in every loop iteration, but fixed in every execution due to seed",
+                                                                                "linked": false
+                                                                            }
+                                                                        ],
+                                                                        "selected": false,
+                                                                        "selectGeom": false,
+                                                                        "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode~procedure~5"
+                                                                    },
+                                                                    {
+                                                                        "type": 14,
+                                                                        "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode~procedure~5",
+                                                                        "ID": "prod-qm1abc7g5jr",
+                                                                        "enabled": true,
+                                                                        "print": false,
+                                                                        "argCount": 1,
+                                                                        "args": [
+                                                                            {
+                                                                                "name": "comment",
+                                                                                "value": "!random && !order",
+                                                                                "linked": false
+                                                                            }
+                                                                        ],
+                                                                        "selected": false
+                                                                    },
+                                                                    {
+                                                                        "type": 0,
+                                                                        "ID": "prod-asx9h07oycl",
+                                                                        "enabled": true,
+                                                                        "print": false,
+                                                                        "argCount": 2,
+                                                                        "args": [
+                                                                            {
+                                                                                "name": "var_name",
+                                                                                "value": "loop_rand_int_seed",
+                                                                                "invalidVar": false,
+                                                                                "jsValue": "loop_rand_int_seed_",
+                                                                                "linked": false
+                                                                            },
+                                                                            {
+                                                                                "name": "value",
+                                                                                "value": "randInt(0, 100, i)",
+                                                                                "linked": false,
+                                                                                "jsValue": "randInt(0, 100, i_)",
+                                                                                "usedVars": [
+                                                                                    "i"
+                                                                                ],
+                                                                                "invalidVar": false
+                                                                            }
+                                                                        ],
+                                                                        "selected": false,
+                                                                        "variable": "loop_rand_int_seed",
+                                                                        "selectGeom": false,
+                                                                        "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode~procedure~5",
+                                                                        "hasError": false
+                                                                    },
+                                                                    {
+                                                                        "type": 14,
+                                                                        "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode~procedure~5",
+                                                                        "ID": "prod-ximnvcn8ozf",
+                                                                        "enabled": true,
+                                                                        "print": false,
+                                                                        "argCount": 1,
+                                                                        "args": [
+                                                                            {
+                                                                                "name": "comment",
+                                                                                "value": "=======================================================================================================================",
+                                                                                "linked": false
+                                                                            }
+                                                                        ],
+                                                                        "selected": false,
+                                                                        "selectGeom": false
+                                                                    },
+                                                                    {
+                                                                        "type": 14,
+                                                                        "ID": "prod-9350z6fsq8q",
+                                                                        "enabled": true,
+                                                                        "print": false,
+                                                                        "argCount": 1,
+                                                                        "args": [
+                                                                            {
+                                                                                "name": "comment",
+                                                                                "value": "Seeded in loop: Same random number in every loop iteration, every execution due to permanent seed",
+                                                                                "linked": false
+                                                                            }
+                                                                        ],
+                                                                        "selected": false,
+                                                                        "selectGeom": false,
+                                                                        "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode~procedure~5"
+                                                                    },
+                                                                    {
+                                                                        "type": 14,
+                                                                        "ID": "prod-5siw9c6ifir",
+                                                                        "enabled": true,
+                                                                        "print": false,
+                                                                        "argCount": 1,
+                                                                        "args": [
+                                                                            {
+                                                                                "name": "comment",
+                                                                                "value": "!random && order",
+                                                                                "linked": false
+                                                                            }
+                                                                        ],
+                                                                        "selected": false,
+                                                                        "selectGeom": false,
+                                                                        "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode~procedure~5"
+                                                                    },
+                                                                    {
+                                                                        "type": 0,
+                                                                        "ID": "prod-lmon5x83ez",
+                                                                        "enabled": true,
+                                                                        "print": false,
+                                                                        "argCount": 2,
+                                                                        "args": [
+                                                                            {
+                                                                                "name": "var_name",
+                                                                                "value": "loop_rand_int_seed",
+                                                                                "invalidVar": false,
+                                                                                "jsValue": "loop_rand_int_seed_",
+                                                                                "linked": false
+                                                                            },
+                                                                            {
+                                                                                "name": "value",
+                                                                                "value": "randInt(0, 100, 123456)",
+                                                                                "linked": false,
+                                                                                "jsValue": "randInt(0, 100, 123456)",
+                                                                                "usedVars": [],
+                                                                                "invalidVar": false
+                                                                            }
+                                                                        ],
+                                                                        "selected": false,
+                                                                        "variable": "loop_rand_int_seed",
+                                                                        "selectGeom": false,
+                                                                        "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode~procedure~5",
+                                                                        "hasError": false
+                                                                    },
+                                                                    {
+                                                                        "type": 14,
+                                                                        "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode~procedure~5",
+                                                                        "ID": "prod-apvt1clqtps",
+                                                                        "enabled": true,
+                                                                        "print": false,
+                                                                        "argCount": 1,
+                                                                        "args": [
+                                                                            {
+                                                                                "name": "comment",
+                                                                                "value": "=======================================================================================================================",
+                                                                                "linked": false
+                                                                            }
+                                                                        ],
+                                                                        "selected": false,
+                                                                        "selectGeom": false
+                                                                    },
+                                                                    {
+                                                                        "type": 14,
+                                                                        "ID": "prod-33bmptzjmke",
+                                                                        "enabled": true,
+                                                                        "print": false,
+                                                                        "argCount": 1,
+                                                                        "args": [
+                                                                            {
+                                                                                "name": "comment",
+                                                                                "value": "Seeded in loop: Same random number in every loop iteration, but changes in every execution due to random seed outside scope",
+                                                                                "linked": false
+                                                                            }
+                                                                        ],
+                                                                        "selected": false,
+                                                                        "selectGeom": false,
+                                                                        "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode~procedure~5"
+                                                                    },
+                                                                    {
+                                                                        "type": 14,
+                                                                        "ID": "prod-bijudcb3eis",
+                                                                        "enabled": true,
+                                                                        "print": false,
+                                                                        "argCount": 1,
+                                                                        "args": [
+                                                                            {
+                                                                                "name": "comment",
+                                                                                "value": "random && order",
+                                                                                "linked": false
+                                                                            }
+                                                                        ],
+                                                                        "selected": false,
+                                                                        "selectGeom": false,
+                                                                        "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode~procedure~5"
+                                                                    },
+                                                                    {
+                                                                        "type": 0,
+                                                                        "ID": "prod-8sa0j77bnr4",
+                                                                        "enabled": true,
+                                                                        "print": false,
+                                                                        "argCount": 2,
+                                                                        "args": [
+                                                                            {
+                                                                                "name": "var_name",
+                                                                                "value": "loop_rand_int_seed",
+                                                                                "invalidVar": false,
+                                                                                "jsValue": "loop_rand_int_seed_",
+                                                                                "linked": false
+                                                                            },
+                                                                            {
+                                                                                "name": "value",
+                                                                                "value": "randInt(0, 100, rand_int)",
+                                                                                "linked": false,
+                                                                                "jsValue": "randInt(0, 100, rand_int_)",
+                                                                                "usedVars": [
+                                                                                    "rand_int"
+                                                                                ],
+                                                                                "invalidVar": false
+                                                                            }
+                                                                        ],
+                                                                        "selected": false,
+                                                                        "variable": "loop_rand_int_seed",
+                                                                        "selectGeom": false,
+                                                                        "parent": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode~procedure~5",
+                                                                        "hasError": false
+                                                                    }
+                                                                ],
+                                                                "hasError": false,
+                                                                "variable": "i",
+                                                                "selected": false
+                                                            },
+                                                            {
+                                                                "type": 11,
+                                                                "ID": "Return",
+                                                                "meta": {
+                                                                    "name": "",
+                                                                    "module": ""
+                                                                },
+                                                                "argCount": 2,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "__model__",
+                                                                        "value": "",
+                                                                        "jsValue": "",
+                                                                        "linked": false
+                                                                    },
+                                                                    {
+                                                                        "name": "value",
+                                                                        "value": "",
+                                                                        "jsValue": "",
+                                                                        "linked": false
+                                                                    }
+                                                                ],
+                                                                "print": false,
+                                                                "enabled": true,
+                                                                "selected": false,
+                                                                "selectGeom": false,
+                                                                "hasError": false
+                                                            }
+                                                        ],
+                                                        "state": {
+                                                            "procedure": []
+                                                        },
+                                                        "input": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target",
+                                                        "output": {
+                                                            "name": "output",
+                                                            "type": 1,
+                                                            "edges": [],
+                                                            "meta": {
+                                                                "mode": 0
+                                                            },
+                                                            "parentNode": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode"
+                                                        },
+                                                        "hasError": false,
+                                                        "hasExecuted": true
+                                                    }
+                                                },
+                                                "selected": false
+                                            }
+                                        ],
+                                        "meta": {
+                                            "mode": 0
+                                        },
+                                        "parentNode": "~flowchart~nodes~0~output~edges~0~target~parentNode"
+                                    },
+                                    "hasError": false,
+                                    "hasExecuted": true
+                                }
+                            },
+                            "selected": false
+                        }
+                    ],
+                    "meta": {
+                        "mode": 0
+                    },
+                    "parentNode": "~flowchart~nodes~0"
+                },
+                "hasError": false,
+                "hasExecuted": true
+            },
+            "~flowchart~nodes~0~output~edges~0~target~parentNode",
+            "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode"
+        ],
+        "edges": [
+            "~flowchart~nodes~0~output~edges~0",
+            "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0"
+        ],
+        "functions": [],
+        "ordered": true,
+        "last_updated": "2019-10-05T01:31:38.200Z"
+    },
+    "settings": "{\"normals\":{\"show\":false,\"size\":5},\"axes\":{\"show\":true,\"size\":50},\"grid\":{\"show\":true,\"size\":500},\"positions\":{\"show\":true,\"size\":0.5},\"tjs_summary\":{\"show\":false},\"gi_summary\":{\"show\":false},\"wireframe\":{\"show\":false},\"camera\":{\"pos\":{\"x\":-80,\"y\":-80,\"z\":80},\"pos_x\":-80,\"pos_y\":-80,\"pos_z\":80,\"target\":{\"x\":0,\"y\":0,\"z\":0}},\"colors\":{\"viewer_bg\":\"#E6E6E6\",\"position\":\"#000000\",\"position_s\":\"#0033FF\",\"vertex_s\":\"#FFCC00\",\"face_f\":\"#FFFFFF\",\"face_f_s\":\"#4949BD\",\"face_b\":\"#DDDDDD\",\"face_b_s\":\"#00006D\"},\"ambient_light\":{\"show\":true,\"color\":\"#FFFFFF\",\"intensity\":0.5},\"hemisphere_light\":{\"show\":true,\"helper\":false,\"skyColor\":\"#FFFFFF\",\"groundColor\":\"#FFFFFF\",\"intensity\":0.5},\"directional_light\":{\"show\":false,\"helper\":false,\"color\":\"#FFFFFF\",\"intensity\":1,\"shadow\":true,\"shadowSize\":4,\"azimuth\":90,\"altitude\":45,\"distance\":10000},\"ground\":{\"show\":false,\"width\":1000,\"length\":1000,\"height\":-0.5,\"color\":\"#FFFFFF\",\"shininess\":0},\"select\":{\"selector\":{\"id\":8,\"name\":\"Polygons\"},\"tab\":\"0\"},\"version\":\"0.5.1\"}"
+}
